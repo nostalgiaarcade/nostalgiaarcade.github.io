@@ -1,1 +1,340 @@
+/* ==========================
+   NOSTALGIA ARCADE
+   Version 1.0
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#0b1220;
+
+    color:white;
+
+}
+
+/*==========================
+        CABECERA
+==========================*/
+
+header{
+
+    background:#101a2f;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    border-bottom:2px solid #1f3f72;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+}
+
+.logo h1{
+
+    font-size:32px;
+
+    color:#4da3ff;
+
+}
+
+.logo p{
+
+    color:#c7d3e6;
+
+    font-size:14px;
+
+}
+
+/*==========================
+          MENÚ
+==========================*/
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#4da3ff;
+
+}
+
+/*==========================
+         PORTADA
+==========================*/
+
+.hero{
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    background:linear-gradient(180deg,#14284d,#0b1220);
+
+}
+
+.hero h2{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#d9e4f5;
+
+    font-size:18px;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    background:#2684ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+
+    background:#58a7ff;
+
+    transform:translateY(-3px);
+
+}
+
+/*==========================
+        CONTENIDO
+==========================*/
+
+.contenedor{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:70px auto;
+
+}
+
+.contenedor h2{
+
+    margin-bottom:30px;
+
+    font-size:34px;
+
+    color:#4da3ff;
+
+}
+
+/*==========================
+       TARJETAS
+==========================*/
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.game-card{
+
+    background:#182845;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.game-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.game-info{
+
+    padding:20px;
+
+}
+
+.game-info h3{
+
+    margin-bottom:10px;
+
+}
+
+.game-info p{
+
+    color:#d8d8d8;
+
+    line-height:1.6;
+
+}
+
+.game-info .boton{
+
+    margin-top:20px;
+
+}
+
+/*==========================
+         FOOTER
+==========================*/
+
+footer{
+
+    margin-top:80px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:#08101d;
+
+    color:#9eb3d3;
+
+    border-top:2px solid #1f3f72;
+
+}
+
+#visitCounter{
+
+    color:#4da3ff;
+
+    font-weight:bold;
+
+}
+
+/*==========================
+         MÓVIL
+==========================*/
+
+@media(max-width:850px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.hero h2{
+
+    font-size:36px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.logo{
+
+    flex-direction:column;
+
+}
+
+}
