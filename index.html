@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nostalgia Arcade</title>
+
+<meta name="description" content="Juegos retro portables arcade para Windows">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <header>
@@ -17,74 +25,115 @@
 <img src="logo/logo.png" alt="Nostalgia Arcade">
 
 <div>
+
 <h1>Nostalgia Arcade</h1>
-<p>Juegos retro portables arcade para sistemas Windows</p>
-</div>
+
+<p>Juegos retro portables arcade para Windows</p>
 
 </div>
 
-<nav>
-
-<a href="#inicio">Inicio</a>
-<a href="#juegos">Juegos</a>
-<a href="#donaciones">Donaciones</a>
-
-</nav>
+</div>
 
 </header>
 
 
-<section class="hero" id="inicio">
+<!-- BUSCADOR -->
 
-<h2>Descarga. Ejecuta. Juega.</h2>
+<section class="busqueda">
 
-<p>
-Todos los portables están preparados para funcionar con un doble clic,
-sin instalaciones y con la configuración lista para disfrutar.
-</p>
-
-<a class="boton" href="#juegos">Ver últimos juegos</a>
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Buscar juego...">
 
 </section>
 
 
+<!-- CATEGORÍAS -->
+
+<section class="categorias">
+
+<button class="category active" data-category="Todos">
+
+Todos
+
+</button>
+
+<button class="category" data-category="Acción">
+
+<img src="iconos/accion.png">
+
+</button>
+
+<button class="category" data-category="Peleas">
+
+<img src="iconos/peleas.png">
+
+</button>
+
+<button class="category" data-category="Aviones">
+
+<img src="iconos/aviones.png">
+
+</button>
+
+<button class="category" data-category="Deportes">
+
+<img src="iconos/deportes.png">
+
+</button>
+
+<button class="category" data-category="Puzles">
+
+<img src="iconos/puzles.png">
+
+</button>
+
+</section>
+
+
+<!-- JUEGO DESTACADO -->
+
+<section id="featuredGame">
+
+</section>
+
+
+<!-- CATÁLOGO -->
+
 <section class="contenedor">
 
-<h2 id="juegos">Últimos lanzamientos</h2>
+<h2>
+
+🎮 Catálogo de Portables
+
+</h2>
 
 <div id="games" class="grid"></div>
 
 </section>
 
 
-<section class="contenedor" id="donaciones">
-
-<h2>❤️ Donaciones</h2>
+<footer>
 
 <p>
-Si disfrutas del proyecto y quieres ayudar a que siga creciendo,
-puedes apoyarlo mediante una donación.
+
+🎮 Juegos publicados:
+<span id="gameCounter"></span>
+
 </p>
-
-<a class="boton" href="#">Donar</a>
-
-</section>
-
-
-<footer>
 
 <div id="contador">
 
-Visitas:
-<span id="visitCounter">Cargando...</span>
+👁️ Visitas:
+
+<span id="visitCounter">
+
+Próximamente
+
+</span>
 
 </div>
-
-<p>
-
-© 2026 Nostalgia Arcade
-
-</p>
 
 </footer>
 
@@ -92,4 +141,5 @@ Visitas:
 <script src="script.js"></script>
 
 </body>
+
 </html>
