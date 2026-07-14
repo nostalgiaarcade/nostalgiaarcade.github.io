@@ -16,6 +16,7 @@ let currentSearch = "";
 /* ======================================
    Colores de categorías
 ====================================== */
+
 function getCategoryClass(categoria) {
 
     switch (categoria) {
@@ -44,6 +45,7 @@ function getCategoryClass(categoria) {
 /* ======================================
    Juego destacado
 ====================================== */
+
 function renderFeatured() {
 
     if (games.length === 0) return;
@@ -51,35 +53,40 @@ function renderFeatured() {
     const game = games[0];
 
     featuredContainer.innerHTML = `
-    <div class="featured">
+        <div class="featured">
 
-        <img src="${game.imagen}" alt="${game.nombre}">
+            <img src="${game.imagen}" alt="${game.nombre}">
 
-        <div class="featured-info">
+            <div class="featured-info">
 
-            <h2>${game.nombre}</h2>
+                <h2>${game.nombre}</h2>
 
-            <p>${game.descripcion}</p>
+                <p><strong>📅 Publicado:</strong> ${game.fecha}</p>
 
-            <p>
-                <strong>Categoría:</strong>
-                <span class="${getCategoryClass(game.categoria)}">
-                    ${game.categoria}
-                </span>
-            </p>
+                ${game.descripcion ? `<p>${game.descripcion}</p>` : ""}
 
-            <p><strong>Jugadores:</strong> ${game.jugadores}</p>
+                <p>
+                    <strong>Categoría:</strong>
+                    <span class="${getCategoryClass(game.categoria)}">
+                        ${game.categoria}
+                    </span>
+                </p>
 
-            <a
-                class="download"
-                href="${game.link}"
-                target="_blank">
-                Descargar
-            </a>
+                <p>
+                    <strong>👥 Jugadores:</strong>
+                    ${game.jugadores}
+                </p>
+
+                <a
+                    class="download"
+                    href="${game.link}"
+                    target="_blank">
+                    Descargar
+                </a>
+
+            </div>
 
         </div>
-
-    </div>
     `;
 
 }
@@ -87,11 +94,12 @@ function renderFeatured() {
 /* ======================================
    Catálogo
 ====================================== */
+
 function renderGames() {
 
     gamesContainer.innerHTML = "";
 
-    // Ocultar el destacado al buscar o filtrar
+    // Ocultar el juego destacado al buscar o filtrar
     if (currentSearch !== "" || currentCategory !== "Todos") {
         featuredContainer.style.display = "none";
     } else {
@@ -118,49 +126,56 @@ function renderGames() {
     if (filteredGames.length === 0) {
 
         gamesContainer.innerHTML = `
-        <p style="
-            text-align:center;
-            grid-column:1/-1;
-            font-size:22px;
-            color:#999;">
-            No se encontraron juegos.
-        </p>
+            <p style="
+                text-align:center;
+                grid-column:1/-1;
+                font-size:22px;
+                color:#999;">
+                No se encontraron juegos.
+            </p>
         `;
 
         return;
+
     }
 
     filteredGames.forEach(game => {
 
         gamesContainer.innerHTML += `
-        <div class="card">
 
-            <img
-                src="${game.imagen}"
-                alt="${game.nombre}">
+            <div class="card">
 
-            <div class="card-content">
+                <img
+                    src="${game.imagen}"
+                    alt="${game.nombre}">
 
-                <h3>${game.nombre}</h3>
+                <div class="card-content">
 
-                <p class="game-category ${getCategoryClass(game.categoria)}">
-                    ${game.categoria}
-                </p>
+                    <h3>${game.nombre}</h3>
 
-                <p class="players">
-                    👥 ${game.jugadores}
-                </p>
+                    <p class="game-category ${getCategoryClass(game.categoria)}">
+                        ${game.categoria}
+                    </p>
 
-                <a
-                    class="download"
-                    href="${game.link}"
-                    target="_blank">
-                    Descargar
-                </a>
+                    <p class="game-date">
+                        📅 ${game.fecha}
+                    </p>
+
+                    <p class="players">
+                        👥 ${game.jugadores}
+                    </p>
+
+                    <a
+                        class="download"
+                        href="${game.link}"
+                        target="_blank">
+                        Descargar
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
         `;
 
     });
@@ -170,6 +185,7 @@ function renderGames() {
 /* ======================================
    Buscador
 ====================================== */
+
 searchInput.addEventListener("input", function () {
 
     currentSearch = this.value;
@@ -181,6 +197,7 @@ searchInput.addEventListener("input", function () {
 /* ======================================
    Categorías
 ====================================== */
+
 categoryButtons.forEach(button => {
 
     button.addEventListener("click", () => {
