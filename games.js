@@ -5,7 +5,7 @@ const games = [
     categoria:"Acción",
     jugadores:"1-2",
     imagen:"https://i.ibb.co/zh8psvqz/Robocop-2.jpg",
-    descripcion:"Juego basado en la película Robocop",
+    descripcion:"14/07/2026",
     link:"https://shrinkme.click/vgD8TR"
 },
 
