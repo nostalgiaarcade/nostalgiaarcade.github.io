@@ -1,5 +1,5 @@
 /* ===========================
-   NOSTALGIA ARCADE v1.0
+   NOSTALGIA ARCADE v1.1
 =========================== */
 
 *{
@@ -16,7 +16,9 @@ body{
 
 }
 
-/* CABECERA */
+/* ===========================
+   CABECERA
+=========================== */
 
 header{
 
@@ -56,8 +58,9 @@ header{
 
 }
 
-
-/* BUSCADOR */
+/* ===========================
+   BUSCADOR
+=========================== */
 
 .busqueda{
 
@@ -83,8 +86,9 @@ header{
 
 }
 
-
-/* CATEGORÍAS */
+/* ===========================
+   CATEGORÍAS
+=========================== */
 
 .categorias{
 
@@ -92,9 +96,9 @@ header{
 
     justify-content:center;
 
-    align-items:center;
+    align-items:flex-start;
 
-    gap:18px;
+    gap:28px;
 
     flex-wrap:wrap;
 
@@ -110,7 +114,31 @@ header{
 
     cursor:pointer;
 
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
     transition:.25s;
+
+    min-width:80px;
+
+}
+
+.category:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.category.active{
+
+    transform:translateY(-4px);
 
 }
 
@@ -118,22 +146,73 @@ header{
 
     height:58px;
 
-}
-
-.category:hover{
-
-    transform:scale(1.08);
+    transition:.25s;
 
 }
 
-.category.active{
+.category:hover img{
 
-    transform:scale(1.08);
+    transform:scale(1.10);
 
 }
 
+.category.active img{
 
-/* DESTACADO */
+    transform:scale(1.10);
+
+}
+
+.texto{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+}
+
+/* Colores */
+
+.blanco{
+
+    color:white;
+
+}
+
+.rojo{
+
+    color:#ff5a5a;
+
+}
+
+.naranja{
+
+    color:#ffb347;
+
+}
+
+.azul{
+
+    color:#5db7ff;
+
+}
+
+.verde{
+
+    color:#6ee16e;
+
+}
+
+.morado{
+
+    color:#d48bff;
+
+}
+
+/* ===========================
+   DESTACADO
+=========================== */
 
 #featuredGame{
 
@@ -223,8 +302,9 @@ header{
 
 }
 
-
-/* CATÁLOGO */
+/* ===========================
+   CATÁLOGO
+=========================== */
 
 .contenedor{
 
@@ -244,8 +324,9 @@ header{
 
 }
 
-
-/* GRID */
+/* ===========================
+   GRID
+=========================== */
 
 .grid{
 
@@ -257,8 +338,9 @@ header{
 
 }
 
-
-/* TARJETAS */
+/* ===========================
+   TARJETAS
+=========================== */
 
 .card{
 
@@ -318,8 +400,9 @@ header{
 
 }
 
-
-/* FOOTER */
+/* ===========================
+   FOOTER
+=========================== */
 
 footer{
 
@@ -341,8 +424,9 @@ footer p{
 
 }
 
-
-/* RESPONSIVE */
+/* ===========================
+   RESPONSIVE
+=========================== */
 
 @media(max-width:900px){
 
@@ -361,6 +445,24 @@ text-align:center;
 .logo h1{
 
 font-size:32px;
+
+}
+
+.categorias{
+
+gap:20px;
+
+}
+
+.category img{
+
+height:48px;
+
+}
+
+.texto{
+
+font-size:13px;
 
 }
 
