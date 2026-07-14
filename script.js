@@ -14,23 +14,59 @@ let currentCategory = "Todos";
 let currentSearch = "";
 
 /* ======================================
+   Colores de categorías
+====================================== */
+function getCategoryClass(categoria) {
+
+    switch (categoria) {
+
+        case "Acción":
+            return "amarillo";
+
+        case "Peleas":
+            return "rojo";
+
+        case "Aviones":
+            return "azul";
+
+        case "Deportes":
+            return "verde";
+
+        case "Puzles":
+            return "morado";
+
+        default:
+            return "blanco";
+    }
+
+}
+
+/* ======================================
    Juego destacado
 ====================================== */
 function renderFeatured() {
+
     if (games.length === 0) return;
 
     const game = games[0];
 
     featuredContainer.innerHTML = `
     <div class="featured">
+
         <img src="${game.imagen}" alt="${game.nombre}">
 
         <div class="featured-info">
+
             <h2>${game.nombre}</h2>
 
             <p>${game.descripcion}</p>
 
-            <p><strong>Categoría:</strong> ${game.categoria}</p>
+            <p>
+                <strong>Categoría:</strong>
+                <span class="${getCategoryClass(game.categoria)}">
+                    ${game.categoria}
+                </span>
+            </p>
 
             <p><strong>Jugadores:</strong> ${game.jugadores}</p>
 
@@ -40,9 +76,12 @@ function renderFeatured() {
                 target="_blank">
                 Descargar
             </a>
+
         </div>
+
     </div>
     `;
+
 }
 
 /* ======================================
@@ -52,7 +91,7 @@ function renderGames() {
 
     gamesContainer.innerHTML = "";
 
-    // Mostrar u ocultar el juego destacado
+    // Ocultar el destacado al buscar o filtrar
     if (currentSearch !== "" || currentCategory !== "Todos") {
         featuredContainer.style.display = "none";
     } else {
@@ -104,7 +143,7 @@ function renderGames() {
 
                 <h3>${game.nombre}</h3>
 
-                <p class="game-category">
+                <p class="game-category ${getCategoryClass(game.categoria)}">
                     ${game.categoria}
                 </p>
 
