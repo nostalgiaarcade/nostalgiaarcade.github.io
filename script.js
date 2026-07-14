@@ -16,49 +16,48 @@ let currentSearch = "";
 /* ======================================
    Juego destacado
 ====================================== */
-
 function renderFeatured() {
-
     if (games.length === 0) return;
 
     const game = games[0];
 
     featuredContainer.innerHTML = `
-        <div class="featured">
+    <div class="featured">
+        <img src="${game.imagen}" alt="${game.nombre}">
 
-            <img src="${game.imagen}" alt="${game.nombre}">
+        <div class="featured-info">
+            <h2>${game.nombre}</h2>
 
-            <div class="featured-info">
+            <p>${game.descripcion}</p>
 
-                <h2>${game.nombre}</h2>
+            <p><strong>Categoría:</strong> ${game.categoria}</p>
 
-                <p>${game.descripcion}</p>
+            <p><strong>Jugadores:</strong> ${game.jugadores}</p>
 
-                <p><strong>Categoría:</strong> ${game.categoria}</p>
-
-                <p><strong>Jugadores:</strong> ${game.jugadores}</p>
-
-                <a
-                    class="download"
-                    href="${game.link}"
-                    target="_blank">
-                    Descargar
-                </a>
-
-            </div>
-
+            <a
+                class="download"
+                href="${game.link}"
+                target="_blank">
+                Descargar
+            </a>
         </div>
+    </div>
     `;
-
 }
 
 /* ======================================
    Catálogo
 ====================================== */
-
 function renderGames() {
 
     gamesContainer.innerHTML = "";
+
+    // Mostrar u ocultar el juego destacado
+    if (currentSearch !== "" || currentCategory !== "Todos") {
+        featuredContainer.style.display = "none";
+    } else {
+        featuredContainer.style.display = "block";
+    }
 
     const filteredGames = games.filter(game => {
 
@@ -80,23 +79,21 @@ function renderGames() {
     if (filteredGames.length === 0) {
 
         gamesContainer.innerHTML = `
-            <p style="
-                text-align:center;
-                grid-column:1/-1;
-                font-size:22px;
-                color:#999;">
-                No se encontraron juegos.
-            </p>
+        <p style="
+            text-align:center;
+            grid-column:1/-1;
+            font-size:22px;
+            color:#999;">
+            No se encontraron juegos.
+        </p>
         `;
 
         return;
-
     }
 
     filteredGames.forEach(game => {
 
         gamesContainer.innerHTML += `
-
         <div class="card">
 
             <img
@@ -106,9 +103,10 @@ function renderGames() {
             <div class="card-content">
 
                 <h3>${game.nombre}</h3>
+
                 <p class="game-category">
-    ${game.categoria}
-</p>
+                    ${game.categoria}
+                </p>
 
                 <p class="players">
                     👥 ${game.jugadores}
@@ -124,7 +122,6 @@ function renderGames() {
             </div>
 
         </div>
-
         `;
 
     });
@@ -134,7 +131,6 @@ function renderGames() {
 /* ======================================
    Buscador
 ====================================== */
-
 searchInput.addEventListener("input", function () {
 
     currentSearch = this.value;
@@ -146,7 +142,6 @@ searchInput.addEventListener("input", function () {
 /* ======================================
    Categorías
 ====================================== */
-
 categoryButtons.forEach(button => {
 
     button.addEventListener("click", () => {
