@@ -1,121 +1,215 @@
-/* ======================================
-   NOSTALGIA ARCADE
+/* ==========================================================
+   NOSTALGIA ARCADE v2.0
    script.js
-====================================== */
+   ========================================================== */
 
-// Contenedores
+/* ===========================
+   ELEMENTOS DEL DOM
+=========================== */
+
 const gamesContainer = document.getElementById("games");
 const featuredContainer = document.getElementById("featuredGame");
 const searchInput = document.getElementById("searchInput");
 const categoryButtons = document.querySelectorAll(".category");
 const gameCounter = document.getElementById("gameCounter");
 
+
+/* ===========================
+   VARIABLES
+=========================== */
+
 let currentCategory = "Todos";
 let currentSearch = "";
 
-/* ======================================
-   Juego destacado
-====================================== */
 
-function renderFeatured() {
+/* ===========================
+   ICONOS DE CATEGORÍA
+=========================== */
 
-    if (games.length === 0) return;
+const categoryIcons = {
 
-    const game = games[0];
+    "Acción":"accion",
+    "Peleas":"peleas",
+    "Aviones":"aviones",
+    "Deportes":"deportes",
+    "Puzles":"puzles",
+    "Todos":"todos"
 
-    featuredContainer.innerHTML = `
-        <div class="featured">
+};
 
-            <img src="${game.imagen}" alt="${game.nombre}">
 
-            <div class="featured-info">
+/* ===========================
+   JUEGO DESTACADO
+=========================== */
 
-                <h2>${game.nombre}</h2>
+function renderFeatured(){
 
-                <p>${game.descripcion}</p>
+    if(games.length===0){
 
-                <p><strong>Categoría:</strong> ${game.categoria}</p>
+        featuredContainer.innerHTML="";
 
-                <p><strong>Jugadores:</strong> ${game.jugadores}</p>
+        return;
 
-                <a
-                    class="download"
-                    href="${game.link}"
-                    target="_blank">
-                    Descargar
-                </a>
+    }
+
+    const game=games[0];
+
+    const icon=categoryIcons[game.categoria];
+
+    featuredContainer.innerHTML=`
+
+    <div class="featured">
+
+        <img
+        src="${game.imagen}"
+        alt="${game.nombre}">
+
+        <div class="featured-info">
+
+            <h2>${game.nombre}</h2>
+
+            <div class="categoria">
+
+                <img
+                src="iconos/${icon}.png"
+                alt="${game.categoria}">
+
+                <span>${game.categoria}</span>
 
             </div>
 
+            <p class="players">
+
+                👥 ${game.jugadores} jugadores
+
+            </p>
+
+            <p class="fecha">
+
+                📅 ${game.fecha}
+
+            </p>
+
+            <a
+            class="download"
+            href="${game.link}"
+            target="_blank">
+
+                Descargar
+
+            </a>
+
         </div>
+
+    </div>
+
     `;
 
 }
 
-/* ======================================
-   Catálogo
-====================================== */
 
-function renderGames() {
+/* ===========================
+   FILTRAR JUEGOS
+=========================== */
 
-    gamesContainer.innerHTML = "";
+function getFilteredGames(){
 
-    const filteredGames = games.filter(game => {
+    return games.filter(game=>{
 
-        const categoryOk =
-            currentCategory === "Todos" ||
-            game.categoria === currentCategory;
+        const categoriaOK=
 
-        const textOk =
+            currentCategory==="Todos" ||
+
+            game.categoria===currentCategory;
+
+        const textoOK=
+
             game.nombre
-                .toLowerCase()
-                .includes(currentSearch.toLowerCase());
+            .toLowerCase()
+            .includes(currentSearch.toLowerCase());
 
-        return categoryOk && textOk;
+        return categoriaOK && textoOK;
 
     });
 
-    gameCounter.textContent = filteredGames.length;
+}/* ===========================
+   MOSTRAR CATÁLOGO
+=========================== */
 
-    if (filteredGames.length === 0) {
+function renderGames(){
 
-        gamesContainer.innerHTML = `
-            <p style="
-                text-align:center;
-                grid-column:1/-1;
-                font-size:22px;
-                color:#999;">
-                No se encontraron juegos.
-            </p>
+    gamesContainer.innerHTML="";
+
+    const filteredGames=getFilteredGames();
+
+    gameCounter.textContent=filteredGames.length;
+
+    if(filteredGames.length===0){
+
+        gamesContainer.innerHTML=`
+
+        <p style="
+        grid-column:1/-1;
+        text-align:center;
+        font-size:22px;
+        color:#999;
+        ">
+
+        No se encontraron juegos.
+
+        </p>
+
         `;
 
         return;
 
     }
 
-    filteredGames.forEach(game => {
+    filteredGames.forEach(game=>{
 
-        gamesContainer.innerHTML += `
+        const icon=categoryIcons[game.categoria];
+
+        gamesContainer.innerHTML+=`
 
         <div class="card">
 
             <img
-                src="${game.imagen}"
-                alt="${game.nombre}">
+            src="${game.imagen}"
+            alt="${game.nombre}">
 
             <div class="card-content">
 
                 <h3>${game.nombre}</h3>
 
+                <div class="categoria">
+
+                    <img
+                    src="iconos/${icon}.png"
+                    alt="${game.categoria}">
+
+                    <span>${game.categoria}</span>
+
+                </div>
+
                 <p class="players">
-                    👥 ${game.jugadores}
+
+                    👥 ${game.jugadores} jugadores
+
+                </p>
+
+                <p class="fecha">
+
+                    📅 ${game.fecha}
+
                 </p>
 
                 <a
-                    class="download"
-                    href="${game.link}"
-                    target="_blank">
+                class="download"
+                href="${game.link}"
+                target="_blank">
+
                     Descargar
+
                 </a>
 
             </div>
@@ -128,43 +222,65 @@ function renderGames() {
 
 }
 
-/* ======================================
-   Buscador
-====================================== */
 
-searchInput.addEventListener("input", function () {
+/* ===========================
+   BUSCADOR
+=========================== */
 
-    currentSearch = this.value;
+searchInput.addEventListener("input",()=>{
+
+    currentSearch=searchInput.value;
 
     renderGames();
 
 });
 
-/* ======================================
-   Categorías
-====================================== */
 
-categoryButtons.forEach(button => {
+/* ===========================
+   BOTONES DE CATEGORÍA
+=========================== */
 
-    button.addEventListener("click", () => {
+categoryButtons.forEach(button=>{
 
-        categoryButtons.forEach(btn =>
-            btn.classList.remove("active")
-        );
+    button.addEventListener("click",()=>{
+
+        categoryButtons.forEach(btn=>{
+
+            btn.classList.remove("active");
+
+        });
 
         button.classList.add("active");
 
-        currentCategory = button.dataset.category;
+        currentCategory=button.dataset.category;
 
         renderGames();
 
     });
 
-});
+});/* ===========================
+   INICIALIZAR WEB
+=========================== */
 
-/* ======================================
-   Inicializar
-====================================== */
+function init(){
 
-renderFeatured();
-renderGames();
+    if(typeof games==="undefined"){
+
+        console.error("No se ha encontrado games.js");
+
+        return;
+
+    }
+
+    renderFeatured();
+
+    renderGames();
+
+}
+
+
+/* ===========================
+   INICIAR
+=========================== */
+
+init();
