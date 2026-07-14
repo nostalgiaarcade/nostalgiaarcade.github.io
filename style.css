@@ -377,6 +377,12 @@ header{
     padding:18px;
 
 }
+.game-category{
+    color:#ffd400;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
 
 .card h3{
 
