@@ -3,179 +3,163 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nostalgia Arcade</title>
+<title>Nostalgia Arcade</title>
 
-    <meta name="description" content="Juegos retro portables arcade para Windows">
+<meta name="description" content="Juegos Retro Portables Arcade para Windows">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ===========================
-         CABECERA
-    =========================== -->
+<!-- ========================================= -->
+<!-- CABECERA -->
+<!-- ========================================= -->
 
-    <header>
+<header>
 
-        <div class="logo">
+<div class="logo">
 
-            <img src="logo/logo.png" alt="Nostalgia Arcade">
+<img src="logo/logo.png" alt="Nostalgia Arcade">
 
-            <div>
+<div>
 
-                <h1>Nostalgia Arcade</h1>
+<h1>Nostalgia Arcade</h1>
 
-                <p>Juegos retro portables arcade para Windows</p>
+<p>Juegos Retro Portables Arcade para Windows</p>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </header>
+</header>
 
+<!-- ========================================= -->
+<!-- BUSCADOR -->
+<!-- ========================================= -->
 
-    <!-- ===========================
-         BUSCADOR
-    =========================== -->
+<section class="busqueda">
 
-    <section class="busqueda">
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Buscar juego...">
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔍 Buscar juego...">
+</section>
 
-    </section>
+<!-- ========================================= -->
+<!-- MENÚ SUPERIOR -->
+<!-- ========================================= -->
 
+<nav class="top-menu">
 
-    <!-- ===========================
-         CATEGORÍAS
-    =========================== -->
+<a href="#">Información</a>
 
-    <section class="categorias">
+<span>-</span>
 
-        <button class="category active" data-category="Todos">
+<a href="#">Donaciones</a>
 
-            <img src="iconos/todos.png" alt="Todos">
+<span>-</span>
 
-            <span class="texto naranja">Todos</span>
+<a href="#">Foro</a>
 
-        </button>
+</nav>
 
+<!-- ========================================= -->
+<!-- CATEGORÍAS -->
+<!-- ========================================= -->
 
-        <button class="category" data-category="Acción">
+<section class="categorias">
 
-            <img src="iconos/accion.png" alt="Acción">
+<button class="category active" data-category="Todos">
+<img src="iconos/todos.png" alt="Todos">
+<span class="texto naranja">Todos</span>
+</button>
 
-            <span class="texto naranja">Acción</span>
+<button class="category" data-category="Acción">
+<img src="iconos/accion.png" alt="Acción">
+<span class="texto naranja">Acción</span>
+</button>
 
-        </button>
+<button class="category" data-category="Peleas">
+<img src="iconos/peleas.png" alt="Peleas">
+<span class="texto rojo">Peleas</span>
+</button>
 
+<button class="category" data-category="Aviones">
+<img src="iconos/aviones.png" alt="Aviones">
+<span class="texto azul">Aviones</span>
+</button>
 
-        <button class="category" data-category="Peleas">
+<button class="category" data-category="Deportes">
+<img src="iconos/deportes.png" alt="Deportes">
+<span class="texto verde">Deportes</span>
+</button>
 
-            <img src="iconos/peleas.png" alt="Peleas">
+<button class="category" data-category="Puzles">
+<img src="iconos/puzles.png" alt="Puzles">
+<span class="texto morado">Puzles</span>
+</button>
 
-            <span class="texto rojo">Peleas</span>
+</section>
 
-        </button>
+<!-- ========================================= -->
+<!-- JUEGOS -->
+<!-- ========================================= -->
 
+<section class="contenedor">
 
-        <button class="category" data-category="Aviones">
+<h2>ÚLTIMOS PORTABLES CREADOS</h2>
 
-            <img src="iconos/aviones.png" alt="Aviones">
+<div id="games" class="grid"></div>
 
-            <span class="texto azul">Aviones</span>
+</section>
 
-        </button>
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
 
+<footer>
 
-        <button class="category" data-category="Deportes">
+<div class="footer-links">
 
-            <img src="iconos/deportes.png" alt="Deportes">
+<a href="#">YouTube</a>
 
-            <span class="texto verde">Deportes</span>
+<span>·</span>
 
-        </button>
+<a href="#">Contacto</a>
 
+</div>
 
-        <button class="category" data-category="Puzles">
+<p>
 
-            <img src="iconos/puzles.png" alt="Puzles">
+🎮 Juegos publicados:
+<span id="gameCounter"></span>
 
-            <span class="texto morado">Puzles</span>
+</p>
 
-        </button>
+<p>
 
-    </section>
+👁️ Visitas:
+<span id="visitCounter">
 
+Próximamente
 
-    <!-- ===========================
-         ÚLTIMO JUEGO PORTABLE
-    =========================== -->
+</span>
 
-    <section class="contenedor">
+</p>
 
-        <h2>Último juego portable creado</h2>
+</footer>
 
-    </section>
-
-    <section id="featuredGame">
-
-    </section>
-
-
-    <!-- ===========================
-         CATÁLOGO
-    =========================== -->
-
-    <section class="contenedor">
-
-        <h2>Catálogo de Portables</h2>
-
-        <div id="games" class="grid"></div>
-
-    </section>
-
-
-    <!-- ===========================
-         FOOTER
-    =========================== -->
-
-    <footer>
-
-        <p>
-
-            🎮 Juegos publicados:
-            <span id="gameCounter"></span>
-
-        </p>
-
-        <div id="contador">
-
-            👁️ Visitas:
-
-            <span id="visitCounter">
-
-                Próximamente
-
-            </span>
-
-        </div>
-
-    </footer>
-
-    <script src="games.js"></script>
-    <script src="script.js"></script>
+<script src="games.js"></script>
+<script src="script.js"></script>
 
 </body>
 
 </html>
-```
