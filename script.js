@@ -106,6 +106,9 @@ function renderGames() {
             <div class="card-content">
 
                 <h3>${game.nombre}</h3>
+                <p class="game-category">
+    ${game.categoria}
+</p>
 
                 <p class="players">
                     👥 ${game.jugadores}
