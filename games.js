@@ -2,7 +2,7 @@ const games = [
 
 {
     nombre: "Pang 3",
-    categoria: "Acción",
+    categoria: "Puzles",
     jugadores: "1-2",
     imagen: "https://i.ibb.co/M6BqqjN/pang-3.jpg",
 
