@@ -1,20 +1,358 @@
-/* ===================================================
-   TARJETAS v2.0
-=================================================== */
+/* ===========================
+   NOSTALGIA ARCADE v1.1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#111;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ===========================
+   CABECERA
+=========================== */
+
+header{
+
+    background:#1b1b1b;
+    border-bottom:3px solid #333;
+    padding:25px;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.logo img{
+
+    width:90px;
+
+}
+
+.logo h1{
+
+    font-size:42px;
+    color:#ffd400;
+
+}
+
+.logo p{
+
+    color:#cfcfcf;
+    margin-top:5px;
+
+}
+
+/* ===========================
+   BUSCADOR
+=========================== */
+
+.busqueda{
+
+    padding:30px;
+    text-align:center;
+
+}
+
+#searchInput{
+
+    width:90%;
+    max-width:700px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    outline:none;
+
+}
+
+/* ===========================
+   CATEGORÍAS
+=========================== */
+
+.categorias{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:28px;
+
+    flex-wrap:wrap;
+
+    padding:15px 30px 40px;
+
+}
+
+.category{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    transition:.25s;
+
+    min-width:80px;
+
+}
+
+.category:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.category.active{
+
+    transform:translateY(-4px);
+
+}
+
+.category img{
+
+    height:58px;
+
+    transition:.25s;
+
+}
+
+.category:hover img{
+
+    transform:scale(1.10);
+
+}
+
+.category.active img{
+
+    transform:scale(1.10);
+
+}
+
+.texto{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+}
+
+/* Colores */
+
+.blanco{
+
+    color:white;
+
+}
+
+.rojo{
+
+    color:#ff5a5a;
+
+}
+
+.naranja{
+
+    color:#ffb347;
+
+}
+
+.azul{
+
+    color:#5db7ff;
+
+}
+
+.verde{
+
+    color:#6ee16e;
+
+}
+
+.morado{
+
+    color:#d48bff;
+
+}
+
+/* ===========================
+   DESTACADO
+=========================== */
+
+#featuredGame{
+
+    width:92%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 30px rgba(0,0,0,.45);
+
+    margin-bottom:55px;
+
+}
+
+.featured{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+
+.featured img{
+
+    width:360px;
+
+    max-width:100%;
+
+}
+
+.featured-info{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+.featured-info h2{
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+}
+
+.featured-info p{
+
+    color:#d5d5d5;
+
+    line-height:1.6;
+
+    margin-bottom:30px;
+
+}
+
+.download{
+
+    background:#ffd400;
+
+    color:#000;
+
+    padding:16px 28px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.download:hover{
+
+    background:white;
+
+}
+
+/* ===========================
+   CATÁLOGO
+=========================== */
+
+.contenedor{
+
+    width:92%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+.contenedor h2{
+
+    margin-bottom:30px;
+
+    font-size:34px;
+
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   TARJETAS
+=========================== */
 
 .card{
 
     background:#1b1b1b;
 
-    border-radius:16px;
+    border-radius:14px;
 
     overflow:hidden;
 
     transition:.30s;
 
-    box-shadow:0 8px 18px rgba(0,0,0,.35);
-
-    border:1px solid #2d2d2d;
+    box-shadow:0 0 20px rgba(0,0,0,.30);
 
 }
 
@@ -22,9 +360,7 @@
 
     transform:translateY(-8px);
 
-    box-shadow:0 0 28px rgba(255,212,0,.30);
-
-    border-color:#ffd400;
+    box-shadow:0 0 30px rgba(255,212,0,.25);
 
 }
 
@@ -44,367 +380,90 @@
 
 .card h3{
 
-    font-size:22px;
-
-    text-align:center;
-
-    margin-bottom:18px;
+    margin-bottom:12px;
 
 }
-
-
-/* ===================================================
-   CATEGORÍA
-=================================================== */
-
-.categoria{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin-bottom:18px;
-
-}
-
-.categoria img{
-
-    width:42px;
-
-    height:42px;
-
-    margin-bottom:8px;
-
-    transition:.25s;
-
-}
-
-.card:hover .categoria img{
-
-    transform:scale(1.12);
-
-}
-
-.categoria span{
-
-    font-size:15px;
-
-    font-weight:bold;
-
-    color:#e4e4e4;
-
-}
-
-
-/* ===================================================
-   JUGADORES
-=================================================== */
 
 .players{
 
-    display:flex;
+    color:#cfcfcf;
 
-    justify-content:center;
-
-    align-items:center;
-
-    gap:8px;
-
-    color:#bfbfbf;
-
-    font-size:15px;
-
-    margin-bottom:10px;
+    margin-bottom:20px;
 
 }
 
-
-/* ===================================================
-   FECHA
-=================================================== */
-
-.fecha{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:8px;
-
-    color:#9f9f9f;
-
-    font-size:14px;
-
-    margin-bottom:22px;
-
-}
-
-
-/* ===================================================
-   BOTÓN
-=================================================== */
-
-.download{
+.card .download{
 
     display:block;
-
-    width:100%;
 
     text-align:center;
 
-    background:#ffd400;
-
-    color:#111;
-
-    text-decoration:none;
-
-    padding:14px;
-
-    border-radius:10px;
-
-    font-weight:bold;
-
-    transition:.25s;
-
 }
 
-.download:hover{
+/* ===========================
+   FOOTER
+=========================== */
 
-    background:#ffffff;
+footer{
 
-    transform:translateY(-2px);
-
-}/* ===================================================
-   JUEGO DESTACADO
-=================================================== */
-
-#featuredGame{
-
-    width:92%;
-
-    max-width:1200px;
-
-    margin:0 auto 60px;
+    margin-top:70px;
 
     background:#1b1b1b;
 
-    border:1px solid #2d2d2d;
+    padding:35px;
 
-    border-radius:18px;
+    text-align:center;
 
-    overflow:hidden;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    color:#bdbdbd;
 
 }
+
+footer p{
+
+    margin-bottom:12px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
 
 .featured{
 
-    display:flex;
-
-    flex-wrap:wrap;
-
-    align-items:center;
-
-}
-
-.featured img{
-
-    width:380px;
-
-    max-width:100%;
-
-    display:block;
+flex-direction:column;
 
 }
 
 .featured-info{
 
-    flex:1;
-
-    padding:35px;
+text-align:center;
 
 }
 
-.featured-info h2{
+.logo h1{
 
-    font-size:40px;
-
-    margin-bottom:25px;
+font-size:32px;
 
 }
 
-.featured-info .categoria{
+.categorias{
 
-    margin-bottom:25px;
-
-}
-
-.featured-info .categoria img{
-
-    width:52px;
-
-    height:52px;
+gap:20px;
 
 }
-
-.featured-info .players{
-
-    justify-content:flex-start;
-
-}
-
-.featured-info .fecha{
-
-    justify-content:flex-start;
-
-    margin-bottom:30px;
-
-}
-
-.featured-info .download{
-
-    width:220px;
-
-}
-
-
-/* ===================================================
-   TÍTULOS
-=================================================== */
-
-.contenedor h2{
-
-    font-size:32px;
-
-    margin-bottom:25px;
-
-    padding-bottom:12px;
-
-    border-bottom:2px solid #ffd400;
-
-}
-
-
-/* ===================================================
-   EFECTOS
-=================================================== */
 
 .category img{
 
-    transition:.25s;
+height:48px;
 
 }
 
-.category:hover img{
+.texto{
 
-    transform:scale(1.12);
-
-}
-
-.category.active img{
-
-    transform:scale(1.15);
+font-size:13px;
 
 }
-
-.card:hover .categoria img{
-
-    filter:drop-shadow(0 0 8px rgba(255,212,0,.45));
-
-}
-
-
-/* ===================================================
-   RESPONSIVE
-=================================================== */
-
-@media(max-width:900px){
-
-    .featured{
-
-        flex-direction:column;
-
-    }
-
-    .featured img{
-
-        width:100%;
-
-    }
-
-    .featured-info{
-
-        text-align:center;
-
-    }
-
-    .featured-info .players,
-
-    .featured-info .fecha{
-
-        justify-content:center;
-
-    }
-
-    .featured-info .download{
-
-        width:100%;
-
-    }
-
-    .grid{
-
-        grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-
-    }
-
-}
-
-@media(max-width:600px){
-
-    .logo h1{
-
-        font-size:30px;
-
-    }
-
-    .logo p{
-
-        font-size:14px;
-
-    }
-
-    .category img{
-
-        height:46px;
-
-    }
-
-    .categoria img{
-
-        width:38px;
-
-        height:38px;
-
-    }
-
-    .card h3{
-
-        font-size:20px;
-
-    }
-
-    .featured-info h2{
-
-        font-size:30px;
-
-    }
 
 }
