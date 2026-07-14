@@ -1,20 +1,19 @@
 /* ======================================
-   NOSTALGIA ARCADE
-   script.js
+   NOSTALGIA ARCADE v2.0
 ====================================== */
 
-// Contenedores
+// Elementos
 const gamesContainer = document.getElementById("games");
-const featuredContainer = document.getElementById("featuredGame");
 const searchInput = document.getElementById("searchInput");
 const categoryButtons = document.querySelectorAll(".category");
 const gameCounter = document.getElementById("gameCounter");
 
+// Estado
 let currentCategory = "Todos";
 let currentSearch = "";
 
 /* ======================================
-   Colores de categorías
+   Colores categorías
 ====================================== */
 
 function getCategoryClass(categoria) {
@@ -43,68 +42,10 @@ function getCategoryClass(categoria) {
 }
 
 /* ======================================
-   Juego destacado
-====================================== */
-
-function renderFeatured() {
-
-    if (games.length === 0) return;
-
-    const game = games[0];
-
-    featuredContainer.innerHTML = `
-        <div class="featured">
-
-            <img src="${game.imagen}" alt="${game.nombre}">
-
-            <div class="featured-info">
-
-                <h2>${game.nombre}</h2>
-
-                <p><strong>📅 Publicado:</strong> ${game.fecha}</p>
-
-                ${game.descripcion ? `<p>${game.descripcion}</p>` : ""}
-
-                <p>
-                    <strong>Categoría:</strong>
-                    <span class="${getCategoryClass(game.categoria)}">
-                        ${game.categoria}
-                    </span>
-                </p>
-
-                <p>
-                    <strong>👥 Jugadores:</strong>
-                    ${game.jugadores}
-                </p>
-
-                <a
-                    class="download"
-                    href="${game.link}"
-                    target="_blank">
-                    Descargar
-                </a>
-
-            </div>
-
-        </div>
-    `;
-
-}
-
-/* ======================================
-   Catálogo
+   Pintar juegos
 ====================================== */
 
 function renderGames() {
-
-    gamesContainer.innerHTML = "";
-
-    // Ocultar el juego destacado al buscar o filtrar
-    if (currentSearch !== "" || currentCategory !== "Todos") {
-        featuredContainer.style.display = "none";
-    } else {
-        featuredContainer.style.display = "block";
-    }
 
     const filteredGames = games.filter(game => {
 
@@ -112,18 +53,18 @@ function renderGames() {
             currentCategory === "Todos" ||
             game.categoria === currentCategory;
 
-        const textOk =
+        const searchOk =
             game.nombre
                 .toLowerCase()
                 .includes(currentSearch.toLowerCase());
 
-        return categoryOk && textOk;
+        return categoryOk && searchOk;
 
     });
 
     gameCounter.textContent = filteredGames.length;
 
-    if (filteredGames.length === 0) {
+    if (!filteredGames.length) {
 
         gamesContainer.innerHTML = `
             <p style="
@@ -139,46 +80,52 @@ function renderGames() {
 
     }
 
+    let html = "";
+
     filteredGames.forEach(game => {
 
-        gamesContainer.innerHTML += `
+        html += `
 
-            <div class="card">
+        <div class="card">
 
-                <img
-                    src="${game.imagen}"
-                    alt="${game.nombre}">
+            <img
+                src="${game.imagen}"
+                alt="${game.nombre}">
 
-                <div class="card-content">
+            <div class="card-content">
 
-                    <h3>${game.nombre}</h3>
+                <h3>${game.nombre}</h3>
 
-                    <p class="game-category ${getCategoryClass(game.categoria)}">
-                        ${game.categoria}
-                    </p>
+                <p class="game-category ${getCategoryClass(game.categoria)}">
+                    ${game.categoria}
+                </p>
 
-                    <p class="game-date">
-                        📅 ${game.fecha}
-                    </p>
+                <p class="game-date">
+                    📅 ${game.fecha}
+                </p>
 
-                    <p class="players">
-                        👥 ${game.jugadores}
-                    </p>
+                <p class="players">
+                    👥 ${game.jugadores}
+                </p>
 
-                    <a
-                        class="download"
-                        href="${game.link}"
-                        target="_blank">
-                        Descargar
-                    </a>
+                <a
+                    class="download"
+                    href="${game.link}"
+                    target="_blank">
 
-                </div>
+                    Descargar
+
+                </a>
 
             </div>
+
+        </div>
 
         `;
 
     });
+
+    gamesContainer.innerHTML = html;
 
 }
 
@@ -217,8 +164,7 @@ categoryButtons.forEach(button => {
 });
 
 /* ======================================
-   Inicializar
+   Inicio
 ====================================== */
 
-renderFeatured();
 renderGames();
