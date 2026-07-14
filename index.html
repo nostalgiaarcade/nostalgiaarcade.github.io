@@ -3,142 +3,151 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nostalgia Arcade</title>
+    <title>Nostalgia Arcade</title>
 
-<meta name="description" content="Juegos retro portables arcade para Windows">
+    <meta name="description" content="Juegos retro portables arcade para Windows">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- CABECERA -->
 
-<div class="logo">
+    <header>
 
-<img src="logo/logo.png" alt="Nostalgia Arcade">
+        <div class="logo">
 
-<div>
+            <img src="logo/logo.png" alt="Nostalgia Arcade">
 
-<h1>Nostalgia Arcade</h1>
+            <div>
 
-<p>Juegos retro portables arcade para Windows</p>
+                <h1>Nostalgia Arcade</h1>
 
-</div>
+                <p>Juegos retro portables arcade para Windows</p>
 
-</div>
+            </div>
 
-</header>
+        </div>
 
-
-<!-- BUSCADOR -->
-
-<section class="busqueda">
-
-<input
-type="text"
-id="searchInput"
-placeholder="🔍 Buscar juego...">
-
-</section>
+    </header>
 
 
-<!-- CATEGORÍAS -->
+    <!-- BUSCADOR -->
 
-<section class="categorias">
+    <section class="busqueda">
 
-<button class="category active" data-category="Todos">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Buscar juego...">
 
-Todos
-
-</button>
-
-<button class="category" data-category="Acción">
-
-<img src="iconos/accion.png">
-
-</button>
-
-<button class="category" data-category="Peleas">
-
-<img src="iconos/peleas.png">
-
-</button>
-
-<button class="category" data-category="Aviones">
-
-<img src="iconos/aviones.png">
-
-</button>
-
-<button class="category" data-category="Deportes">
-
-<img src="iconos/deportes.png">
-
-</button>
-
-<button class="category" data-category="Puzles">
-
-<img src="iconos/puzles.png">
-
-</button>
-
-</section>
+    </section>
 
 
-<!-- JUEGO DESTACADO -->
+    <!-- CATEGORÍAS -->
 
-<section id="featuredGame">
+    <section class="categorias">
 
-</section>
+        <button class="category active" data-category="Todos">
+
+            <span class="texto blanco">Todos</span>
+
+        </button>
+
+        <button class="category" data-category="Acción">
+
+            <img src="iconos/accion.png" alt="Acción">
+
+            <span class="texto rojo">Acción</span>
+
+        </button>
+
+        <button class="category" data-category="Peleas">
+
+            <img src="iconos/peleas.png" alt="Peleas">
+
+            <span class="texto naranja">Peleas</span>
+
+        </button>
+
+        <button class="category" data-category="Aviones">
+
+            <img src="iconos/aviones.png" alt="Aviones">
+
+            <span class="texto azul">Aviones</span>
+
+        </button>
+
+        <button class="category" data-category="Deportes">
+
+            <img src="iconos/deportes.png" alt="Deportes">
+
+            <span class="texto verde">Deportes</span>
+
+        </button>
+
+        <button class="category" data-category="Puzles">
+
+            <img src="iconos/puzles.png" alt="Puzles">
+
+            <span class="texto morado">Puzles</span>
+
+        </button>
+
+    </section>
 
 
-<!-- CATÁLOGO -->
+    <!-- JUEGO DESTACADO -->
 
-<section class="contenedor">
+    <section id="featuredGame">
 
-<h2>
-
-🎮 Catálogo de Portables
-
-</h2>
-
-<div id="games" class="grid"></div>
-
-</section>
+    </section>
 
 
-<footer>
+    <!-- CATÁLOGO -->
 
-<p>
+    <section class="contenedor">
 
-🎮 Juegos publicados:
-<span id="gameCounter"></span>
+        <h2>🎮 Catálogo de Portables</h2>
 
-</p>
+        <div id="games" class="grid"></div>
 
-<div id="contador">
+    </section>
 
-👁️ Visitas:
 
-<span id="visitCounter">
+    <!-- FOOTER -->
 
-Próximamente
+    <footer>
 
-</span>
+        <p>
 
-</div>
+            🎮 Juegos publicados:
+            <span id="gameCounter"></span>
 
-</footer>
+        </p>
 
-<script src="games.js"></script>
-<script src="script.js"></script>
+        <div id="contador">
+
+            👁️ Visitas:
+            <span id="visitCounter">
+
+                Próximamente
+
+            </span>
+
+        </div>
+
+    </footer>
+
+    <script src="games.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
