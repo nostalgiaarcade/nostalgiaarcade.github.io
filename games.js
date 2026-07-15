@@ -10,7 +10,7 @@ const games = [
 
     descripcion: "",
 
-    link: "shrinkme.click/gGCvm"
+    link: "https://shrinkme.click/gGCvm"
 },
     
 {
@@ -23,7 +23,7 @@ const games = [
 
     descripcion: "",
 
-    link: "shrinkme.click/fToNv"
+    link: "https://shrinkme.click/fToNv"
 },
 
 {
