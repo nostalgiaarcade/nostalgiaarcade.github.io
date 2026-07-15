@@ -1,5 +1,18 @@
 const games = [
 
+    {
+    nombre: "Robocop",
+    categoria: "Acción",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/DgDXxVM4/Robocop.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/0FoUe"
+},  
+    
 {
     nombre: "Spin Master",
     categoria: "Acción",
