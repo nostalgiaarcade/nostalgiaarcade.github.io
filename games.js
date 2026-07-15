@@ -1,6 +1,19 @@
 const games = [
 
-    {
+ {
+    nombre: "Cadillacs and Dinosaurs",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/CptjhqYH/cadillacs-and-dinosaurs.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/TwzlFlJr"
+},     
+    
+{
     nombre: "Kabuki Klash",
     categoria: "Peleas",
     jugadores: "1-2",
