@@ -861,3 +861,22 @@ footer p{
 }
 
 }
+
+.footer-donate{
+    margin:18px auto 25px;
+    max-width:700px;
+    color:#bdbdbd;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.footer-donate a{
+    color:#ffd400;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.25s;
+}
+
+.footer-donate a:hover{
+    color:white;
+}
