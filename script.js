@@ -215,3 +215,65 @@ categoryButtons.forEach(button => {
 updateGameCounter();
 
 renderGames();
+
+/* ==========================================================
+   PROTECCIÓN WEB - NOSTALGIA ARCADE
+========================================================== */
+
+(() => {
+
+    // Bloquear menú contextual (botón derecho)
+    document.addEventListener("contextmenu", e => {
+        e.preventDefault();
+    });
+
+    // Bloquear selección de texto
+    document.addEventListener("selectstart", e => {
+        e.preventDefault();
+    });
+
+    // Bloquear arrastrar imágenes
+    document.addEventListener("dragstart", e => {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    });
+
+    // Bloquear copiar
+    document.addEventListener("copy", e => {
+        e.preventDefault();
+    });
+
+    // Bloquear atajos habituales
+    document.addEventListener("keydown", e => {
+
+        const key = e.key.toUpperCase();
+
+        // F12
+        if (e.key === "F12") {
+            e.preventDefault();
+        }
+
+        // Ctrl + U
+        if (e.ctrlKey && key === "U") {
+            e.preventDefault();
+        }
+
+        // Ctrl + Shift + I
+        if (e.ctrlKey && e.shiftKey && key === "I") {
+            e.preventDefault();
+        }
+
+        // Ctrl + Shift + J
+        if (e.ctrlKey && e.shiftKey && key === "J") {
+            e.preventDefault();
+        }
+
+        // Ctrl + Shift + C
+        if (e.ctrlKey && e.shiftKey && key === "C") {
+            e.preventDefault();
+        }
+
+    });
+
+})();
