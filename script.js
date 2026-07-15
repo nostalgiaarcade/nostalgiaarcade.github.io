@@ -1,96 +1,98 @@
-/* ======================================
-   NOSTALGIA ARCADE v2.0
-====================================== */
+/* ==========================================================
+   NOSTALGIA ARCADE
+   SCRIPT.JS v3.0
+========================================================== */
 
-// Elementos
+/* ==========================================================
+   CONFIGURACIÓN
+========================================================== */
+
+const LAST_UPDATE = "15 de julio de 2026";
+
+/* ==========================================================
+   ELEMENTOS DEL DOM
+========================================================== */
+
 const gamesContainer = document.getElementById("games");
 const searchInput = document.getElementById("searchInput");
 const categoryButtons = document.querySelectorAll(".category");
 const gameCounter = document.getElementById("gameCounter");
 
-// Estado
+/* ==========================================================
+   ESTADO
+========================================================== */
+
 let currentCategory = "Todos";
 let currentSearch = "";
 
-/* ======================================
-   Colores categorías
-====================================== */
+/* ==========================================================
+   COLORES DE CATEGORÍA
+========================================================== */
 
-function getCategoryClass(categoria) {
+const categoryColors = {
 
-    switch (categoria) {
+    "Acción": "amarillo",
+    "Peleas": "rojo",
+    "Aviones": "azul",
+    "Deportes": "verde",
+    "Puzles": "morado"
 
-        case "Acción":
-            return "amarillo";
+};
 
-        case "Peleas":
-            return "rojo";
+function getCategoryClass(category) {
 
-        case "Aviones":
-            return "azul";
-
-        case "Deportes":
-            return "verde";
-
-        case "Puzles":
-            return "morado";
-
-        default:
-            return "blanco";
-    }
+    return categoryColors[category] || "blanco";
 
 }
 
-/* ======================================
-   Pintar juegos
-====================================== */
+/* ==========================================================
+   CONTADOR SUPERIOR
+========================================================== */
 
-function renderGames() {
+function updateGameCounter() {
 
-    const filteredGames = games.filter(game => {
+    if (!gameCounter) return;
 
-        const categoryOk =
+    gameCounter.textContent = `🎮 ${games.length} Portables disponibles`;
+
+}
+
+/* ==========================================================
+   FILTRADO
+========================================================== */
+
+function getFilteredGames() {
+
+    return games.filter(game => {
+
+        const categoryMatch =
             currentCategory === "Todos" ||
             game.categoria === currentCategory;
 
-        const searchOk =
+        const searchMatch =
             game.nombre
                 .toLowerCase()
                 .includes(currentSearch.toLowerCase());
 
-        return categoryOk && searchOk;
+        return categoryMatch && searchMatch;
 
     });
 
-    gameCounter.textContent = filteredGames.length;
+}
 
-    if (!filteredGames.length) {
+/* ==========================================================
+   TARJETA
+========================================================== */
 
-        gamesContainer.innerHTML = `
-            <p style="
-                text-align:center;
-                grid-column:1/-1;
-                font-size:22px;
-                color:#999;">
-                No se encontraron juegos.
-            </p>
-        `;
+function createGameCard(game) {
 
-        return;
-
-    }
-
-    let html = "";
-
-    filteredGames.forEach(game => {
-
-        html += `
-
-        <div class="card">
+    return `
+        <article class="card">
 
             <img
                 src="${game.imagen}"
-                alt="${game.nombre}">
+                alt="${game.nombre}"
+                loading="lazy">
 
             <div class="card-content">
 
@@ -111,7 +113,8 @@ function renderGames() {
                 <a
                     class="download"
                     href="${game.link}"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener">
 
                     Descargar
 
@@ -119,52 +122,96 @@ function renderGames() {
 
             </div>
 
-        </div>
-
-        `;
-
-    });
-
-    gamesContainer.innerHTML = html;
+        </article>
+    `;
 
 }
 
-/* ======================================
-   Buscador
-====================================== */
+/* ==========================================================
+   MENSAJE SIN RESULTADOS
+========================================================== */
 
-searchInput.addEventListener("input", function () {
+function renderEmptyMessage() {
 
-    currentSearch = this.value;
+    gamesContainer.innerHTML = `
+        <p style="
+            text-align:center;
+            grid-column:1/-1;
+            font-size:22px;
+            color:#999;">
+            No se encontraron juegos.
+        </p>
+    `;
+
+}
+
+/* ==========================================================
+   RENDER
+========================================================== */
+
+function renderGames() {
+
+    const filteredGames = getFilteredGames();
+
+    if (!filteredGames.length) {
+
+        renderEmptyMessage();
+        return;
+
+    }
+
+    gamesContainer.innerHTML = filteredGames
+        .map(createGameCard)
+        .join("");
+
+}
+
+/* ==========================================================
+   BUSCADOR
+========================================================== */
+
+function handleSearch(event) {
+
+    currentSearch = event.target.value.trim();
 
     renderGames();
 
-});
+}
 
-/* ======================================
-   Categorías
-====================================== */
+/* ==========================================================
+   CATEGORÍAS
+========================================================== */
+
+function handleCategory(event) {
+
+    categoryButtons.forEach(button =>
+        button.classList.remove("active")
+    );
+
+    event.currentTarget.classList.add("active");
+
+    currentCategory = event.currentTarget.dataset.category;
+
+    renderGames();
+
+}
+
+/* ==========================================================
+   EVENTOS
+========================================================== */
+
+searchInput.addEventListener("input", handleSearch);
 
 categoryButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
-
-        categoryButtons.forEach(btn =>
-            btn.classList.remove("active")
-        );
-
-        button.classList.add("active");
-
-        currentCategory = button.dataset.category;
-
-        renderGames();
-
-    });
+    button.addEventListener("click", handleCategory);
 
 });
 
-/* ======================================
-   Inicio
-====================================== */
+/* ==========================================================
+   INICIO
+========================================================== */
+
+updateGameCounter();
 
 renderGames();
