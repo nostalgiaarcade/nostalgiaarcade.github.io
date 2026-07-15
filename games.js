@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Spin Master",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/VwSX46N/Spin-Master.jpg",
+
+    fecha: "15/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/IPqsye8C"
+},    
+    
+{
     nombre: "Pang",
     categoria: "Puzles",
     jugadores: "1-2",
