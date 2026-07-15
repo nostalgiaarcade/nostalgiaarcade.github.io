@@ -1,6 +1,43 @@
-/* =====================================================
-   NOSTALGIA ARCADE v2.0
-   ===================================================== */
+/* ==========================================================
+   NOSTALGIA ARCADE
+   STYLE.CSS v3.0
+   ========================================================== */
+
+/* ==========================================================
+   VARIABLES
+   ========================================================== */
+
+:root{
+
+    --bg:#111;
+    --panel:#1b1b1b;
+
+    --border:#333;
+
+    --text:#ffffff;
+    --text-soft:#cfcfcf;
+    --text-muted:#bdbdbd;
+    --text-dark:#555;
+    --text-empty:#999;
+
+    --yellow:#ffd400;
+    --orange:#ffb347;
+    --red:#ff5a5a;
+    --blue:#5db7ff;
+    --green:#6ee16e;
+    --purple:#d48bff;
+
+    --radius-card:16px;
+    --radius-button:10px;
+    --radius-input:12px;
+
+    --transition:.25s;
+
+}
+
+/* ==========================================================
+   RESET
+   ========================================================== */
 
 *{
     margin:0;
@@ -14,38 +51,30 @@ html{
 
 body{
 
-    background:#111;
-
-    color:#fff;
-
-    font-family:Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,Helvetica,sans-serif;
 
 }
 
-/* =====================================================
+/* ==========================================================
    CABECERA
-   ===================================================== */
+   ========================================================== */
 
 header{
 
-    background:#1b1b1b;
-
-    border-bottom:3px solid #333;
-
-    padding:25px;
+    background:var(--panel);
+    border-bottom:3px solid var(--border);
+    padding:28px 20px;
 
 }
 
 .logo{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    gap:20px;
-
+    gap:22px;
     flex-wrap:wrap;
 
 }
@@ -56,30 +85,50 @@ header{
 
 }
 
+.logo-info{
+
+    text-align:left;
+
+}
+
+.game-counter{
+
+    color:var(--yellow);
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:10px;
+
+}
+
+.last-update{
+
+    color:#8d8d8d;
+    font-size:14px;
+    margin-bottom:18px;
+
+}
+
 .logo h1{
 
-    color:#ffd400;
-
+    color:var(--yellow);
     font-size:42px;
+    margin-bottom:6px;
 
 }
 
 .logo p{
 
-    color:#cfcfcf;
-
-    margin-top:6px;
+    color:var(--text-soft);
 
 }
 
-/* =====================================================
+/* ==========================================================
    BUSCADOR
-   ===================================================== */
+   ========================================================== */
 
 .busqueda{
 
     padding:30px;
-
     text-align:center;
 
 }
@@ -87,16 +136,14 @@ header{
 #searchInput{
 
     width:90%;
-
     max-width:700px;
 
     padding:18px;
 
     border:none;
-
     outline:none;
 
-    border-radius:12px;
+    border-radius:var(--radius-input);
 
     font-size:18px;
 
@@ -104,17 +151,16 @@ header{
 
 }
 
-/* =====================================================
-   MENÚ SUPERIOR
-   ===================================================== */
+/* ==========================================================
+   MENÚ
+   ========================================================== */
 
 .top-menu{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
+    flex-wrap:wrap;
 
     gap:18px;
 
@@ -124,23 +170,23 @@ header{
 
 }
 
-.top-menu a{
+.top-menu span{
 
-    text-decoration:none;
-
-    color:#bdbdbd;
-
-    transition:.25s;
-
-    position:relative;
-
-    padding-bottom:4px;
+    color:var(--text-dark);
 
 }
 
-.top-menu span{
+.top-menu a{
 
-    color:#555;
+    position:relative;
+
+    color:var(--text-muted);
+
+    text-decoration:none;
+
+    padding-bottom:4px;
+
+    transition:var(--transition);
 
 }
 
@@ -151,16 +197,14 @@ header{
     position:absolute;
 
     left:0;
-
     bottom:0;
 
     width:0;
-
     height:2px;
 
     background:currentColor;
 
-    transition:.25s;
+    transition:var(--transition);
 
 }
 
@@ -172,37 +216,34 @@ header{
 
 .top-menu a:nth-child(1):hover{
 
-    color:#5db7ff;
+    color:var(--blue);
 
 }
 
 .top-menu a:nth-child(3):hover{
 
-    color:#ffd400;
+    color:var(--yellow);
 
 }
 
 .top-menu a:nth-child(5):hover{
 
-    color:#6ee16e;
+    color:var(--green);
 
 }
 
-/* =====================================================
+/* ==========================================================
    CATEGORÍAS
-   ===================================================== */
+   ========================================================== */
 
 .categorias{
 
     display:flex;
-
     justify-content:center;
-
     align-items:flex-start;
+    flex-wrap:wrap;
 
     gap:28px;
-
-    flex-wrap:wrap;
 
     padding:15px 30px 40px;
 
@@ -210,34 +251,25 @@ header{
 
 .category{
 
-    background:none;
-
-    border:none;
-
-    cursor:pointer;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
 
     gap:8px;
 
     min-width:80px;
 
-    transition:.25s;
+    background:none;
+    border:none;
+
+    cursor:pointer;
+
+    transition:var(--transition);
 
 }
 
-.category:hover{
-
-    transform:translateY(-4px);
-
-}
-
+.category:hover,
 .category.active{
 
     transform:translateY(-4px);
@@ -248,16 +280,11 @@ header{
 
     height:58px;
 
-    transition:.25s;
+    transition:var(--transition);
 
 }
 
-.category:hover img{
-
-    transform:scale(1.10);
-
-}
-
+.category:hover img,
 .category.active img{
 
     transform:scale(1.10);
@@ -267,69 +294,31 @@ header{
 .texto{
 
     font-size:14px;
-
     font-weight:bold;
-
     letter-spacing:.5px;
 
 }
 
-/* =====================================================
+/* ==========================================================
    COLORES
-   ===================================================== */
+   ========================================================== */
 
-.blanco{
+.blanco{color:white;}
+.amarillo{color:var(--yellow);}
+.naranja{color:var(--orange);}
+.rojo{color:var(--red);}
+.azul{color:var(--blue);}
+.verde{color:var(--green);}
+.morado{color:var(--purple);}
 
-    color:white;
-
-}
-
-.amarillo{
-
-    color:#ffd400;
-
-}
-
-.naranja{
-
-    color:#ffb347;
-
-}
-
-.rojo{
-
-    color:#ff5a5a;
-
-}
-
-.azul{
-
-    color:#5db7ff;
-
-}
-
-.verde{
-
-    color:#6ee16e;
-
-}
-
-.morado{
-
-    color:#d48bff;
-
-}
-
-/* =====================================================
+/* ==========================================================
    CONTENEDOR
-   ===================================================== */
+   ========================================================== */
 
 .contenedor{
 
     width:92%;
-
     max-width:1300px;
-
     margin:auto;
 
 }
@@ -338,7 +327,7 @@ header{
 
     text-align:center;
 
-    color:#ffd400;
+    color:var(--yellow);
 
     font-size:34px;
 
@@ -348,9 +337,9 @@ header{
 
 }
 
-/* =====================================================
+/* ==========================================================
    GRID
-   ===================================================== */
+   ========================================================== */
 
 .grid{
 
@@ -361,25 +350,25 @@ header{
     gap:30px;
 
 }
-/* =====================================================
+
+/* ==========================================================
    TARJETAS
-   ===================================================== */
+   ========================================================== */
 
 .card{
 
-    background:#1b1b1b;
-
-    border-radius:16px;
+    display:flex;
+    flex-direction:column;
 
     overflow:hidden;
+
+    background:var(--panel);
+
+    border-radius:var(--radius-card);
 
     box-shadow:0 0 20px rgba(0,0,0,.30);
 
     transition:.30s;
-
-    display:flex;
-
-    flex-direction:column;
 
 }
 
@@ -394,7 +383,6 @@ header{
 .card img{
 
     width:100%;
-
     display:block;
 
     transition:.35s;
@@ -410,7 +398,6 @@ header{
 .card-content{
 
     display:flex;
-
     flex-direction:column;
 
     flex:1;
@@ -421,18 +408,17 @@ header{
 
 .card h3{
 
+    color:white;
+
     font-size:24px;
 
     margin-bottom:12px;
-
-    color:white;
 
 }
 
 .game-category{
 
     font-size:15px;
-
     font-weight:bold;
 
     margin-bottom:14px;
@@ -441,7 +427,7 @@ header{
 
 .game-date{
 
-    color:#cfcfcf;
+    color:var(--text-soft);
 
     margin-bottom:10px;
 
@@ -449,39 +435,39 @@ header{
 
 .players{
 
-    color:#cfcfcf;
+    color:var(--text-soft);
 
     margin-bottom:20px;
 
 }
 
-/* =====================================================
-   BOTÓN DESCARGAR
-   ===================================================== */
+/* ==========================================================
+   BOTÓN
+   ========================================================== */
 
 .download{
-
-    margin-top:auto;
 
     display:block;
 
     width:100%;
 
+    margin-top:auto;
+
+    padding:14px;
+
     text-align:center;
 
     text-decoration:none;
 
-    background:#ffd400;
+    background:var(--yellow);
 
-    color:#000;
+    color:black;
 
-    padding:14px;
-
-    border-radius:10px;
+    border-radius:var(--radius-button);
 
     font-weight:bold;
 
-    transition:.25s;
+    transition:var(--transition);
 
 }
 
@@ -493,53 +479,51 @@ header{
 
 }
 
-/* =====================================================
+/* ==========================================================
    FOOTER
-   ===================================================== */
+   ========================================================== */
 
 footer{
 
     margin-top:80px;
 
-    background:#1b1b1b;
-
     padding:40px 20px;
 
     text-align:center;
 
-    color:#bdbdbd;
+    background:var(--panel);
 
-    border-top:2px solid #333;
+    color:var(--text-muted);
+
+    border-top:2px solid var(--border);
 
 }
 
 .footer-links{
 
-    margin-bottom:25px;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     gap:14px;
+
+    margin-bottom:22px;
 
 }
 
 .footer-links span{
 
-    color:#555;
+    color:var(--text-dark);
 
 }
 
 .footer-links a{
 
+    color:var(--text-muted);
+
     text-decoration:none;
 
-    color:#bdbdbd;
-
-    transition:.25s;
+    transition:var(--transition);
 
 }
 
@@ -551,7 +535,7 @@ footer{
 
 .footer-links a:last-child:hover{
 
-    color:#5db7ff;
+    color:var(--blue);
 
 }
 
@@ -561,15 +545,20 @@ footer p{
 
 }
 
-/* =====================================================
+/* ==========================================================
    RESPONSIVE
-   ===================================================== */
+   ========================================================== */
 
 @media (max-width:900px){
 
     .logo{
 
         flex-direction:column;
+        text-align:center;
+
+    }
+
+    .logo-info{
 
         text-align:center;
 
@@ -581,13 +570,22 @@ footer p{
 
     }
 
+    .game-counter{
+
+        font-size:16px;
+
+    }
+
+    .last-update{
+
+        font-size:13px;
+
+    }
+
     .top-menu{
 
         gap:10px;
-
         font-size:14px;
-
-        flex-wrap:wrap;
 
     }
 
