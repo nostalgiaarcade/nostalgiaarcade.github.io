@@ -1,6 +1,32 @@
 const games = [
 
 {
+    nombre: "Pang",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/0j9pRZyc/pang.jpg",
+
+    fecha: "15/07/2026",
+
+    descripcion: "",
+
+    link: "shrinkme.click/gGCvm"
+},
+    
+{
+    nombre: "Super Pang",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/NhZGHw3/super-pang.jpg",
+
+    fecha: "15/07/2026",
+
+    descripcion: "",
+
+    link: "shrinkme.click/fToNv"
+},
+
+{
     nombre: "Pang 3",
     categoria: "Puzles",
     jugadores: "1-2",
