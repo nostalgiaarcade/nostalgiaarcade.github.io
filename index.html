@@ -3,162 +3,208 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nostalgia Arcade</title>
+    <title>Nostalgia Arcade</title>
 
-<meta name="description" content="Colección de juegos arcade portables para Windows. Descarga, ejecuta y juega.">
+    <meta name="description"
+        content="Colección personal de juegos arcade portables para Windows. Descarga, ejecuta y juega.">
 
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- =====================================================
-CABECERA
-===================================================== -->
+    <!-- ========================================= -->
+    <!-- CABECERA -->
+    <!-- ========================================= -->
 
-<header>
+    <header>
 
-    <div class="logo">
+        <div class="logo">
 
-        <img src="logo/logo.png" alt="Nostalgia Arcade">
+            <img src="logo/logo.png" alt="Nostalgia Arcade">
 
-        <div>
+            <div class="logo-info">
 
-            <!-- Contador automático -->
-            <div class="top-counter">
-                🎮 <span id="totalGames">0</span> Portables disponibles
-            </div>
+                <!-- Contador automático -->
+                <div id="gameCounter" class="game-counter">
+                    🎮 0 Portables disponibles
+                </div>
 
-            <h1>Nostalgia Arcade</h1>
+                <!-- Última actualización -->
+                <div class="last-update">
+                    📅 Última actualización: 15 de julio de 2026
+                </div>
 
-            <p>Juegos Retro Portables Arcade para Windows</p>
+                <h1>Nostalgia Arcade</h1>
 
-            <!-- Última actualización -->
-            <div class="last-update">
-                📅 Última actualización: 15 de julio de 2026
+                <p>Colección personal de juegos arcade portables para Windows</p>
+
             </div>
 
         </div>
 
-    </div>
+    </header>
 
-</header>
+    <!-- ========================================= -->
+    <!-- BUSCADOR -->
+    <!-- ========================================= -->
 
-<!-- =====================================================
-BUSCADOR
-===================================================== -->
+    <section class="busqueda">
 
-<section class="busqueda">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Buscar juego...">
 
-    <input
-        type="text"
-        id="searchInput"
-        placeholder="🔍 Buscar juego...">
+    </section>
 
-</section>
+    <!-- ========================================= -->
+    <!-- MENÚ SUPERIOR -->
+    <!-- ========================================= -->
 
-<!-- =====================================================
-MENÚ SUPERIOR
-===================================================== -->
+    <nav class="top-menu">
 
-<nav class="top-menu">
-
-    <a href="proyecto.html">El Proyecto</a>
-
-    <span>·</span>
-
-    <a href="donaciones.html">Donaciones</a>
-
-    <span>·</span>
-
-    <a href="foro.html">Foro</a>
-
-</nav>
-
-<!-- =====================================================
-CATEGORÍAS
-===================================================== -->
-
-<section class="categorias">
-
-    <button class="category active" data-category="Todos">
-        <img src="iconos/todos.png" alt="Todos">
-        <span class="texto naranja">Todos</span>
-    </button>
-
-    <button class="category" data-category="Acción">
-        <img src="iconos/accion.png" alt="Acción">
-        <span class="texto amarillo">Acción</span>
-    </button>
-
-    <button class="category" data-category="Peleas">
-        <img src="iconos/peleas.png" alt="Peleas">
-        <span class="texto rojo">Peleas</span>
-    </button>
-
-    <button class="category" data-category="Aviones">
-        <img src="iconos/aviones.png" alt="Aviones">
-        <span class="texto azul">Aviones</span>
-    </button>
-
-    <button class="category" data-category="Deportes">
-        <img src="iconos/deportes.png" alt="Deportes">
-        <span class="texto verde">Deportes</span>
-    </button>
-
-    <button class="category" data-category="Puzles">
-        <img src="iconos/puzles.png" alt="Puzles">
-        <span class="texto morado">Puzles</span>
-    </button>
-
-</section>
-
-<!-- =====================================================
-LISTADO
-===================================================== -->
-
-<section class="contenedor">
-
-    <h2>ÚLTIMOS PORTABLES CREADOS</h2>
-
-    <div id="games" class="grid"></div>
-
-</section>
-
-<!-- =====================================================
-FOOTER
-===================================================== -->
-
-<footer>
-
-    <div class="footer-links">
-
-        <a href="#">YouTube</a>
+        <a href="proyecto.html">El Proyecto</a>
 
         <span>·</span>
 
-        <a href="#">Contacto</a>
+        <a href="donaciones.html">Donaciones</a>
 
-    </div>
+        <span>·</span>
 
-    <p>
+        <a href="#">Foro</a>
 
-        👁️ Visitas:
-        <span id="visitCounter">
-            Próximamente
-        </span>
+    </nav>
 
-    </p>
+    <!-- ========================================= -->
+    <!-- CATEGORÍAS -->
+    <!-- ========================================= -->
 
-</footer>
+    <section class="categorias">
 
-<script src="games.js"></script>
-<script src="script.js"></script>
+        <button class="category active" data-category="Todos">
+
+            <img src="iconos/todos.png" alt="Todos">
+
+            <span class="texto naranja">
+                Todos
+            </span>
+
+        </button>
+
+        <button class="category" data-category="Acción">
+
+            <img src="iconos/accion.png" alt="Acción">
+
+            <span class="texto naranja">
+                Acción
+            </span>
+
+        </button>
+
+        <button class="category" data-category="Peleas">
+
+            <img src="iconos/peleas.png" alt="Peleas">
+
+            <span class="texto rojo">
+                Peleas
+            </span>
+
+        </button>
+
+        <button class="category" data-category="Aviones">
+
+            <img src="iconos/aviones.png" alt="Aviones">
+
+            <span class="texto azul">
+                Aviones
+            </span>
+
+        </button>
+
+        <button class="category" data-category="Deportes">
+
+            <img src="iconos/deportes.png" alt="Deportes">
+
+            <span class="texto verde">
+                Deportes
+            </span>
+
+        </button>
+
+        <button class="category" data-category="Puzles">
+
+            <img src="iconos/puzles.png" alt="Puzles">
+
+            <span class="texto morado">
+                Puzles
+            </span>
+
+        </button>
+
+    </section>
+
+    <!-- ========================================= -->
+    <!-- LISTADO DE JUEGOS -->
+    <!-- ========================================= -->
+
+    <main class="contenedor">
+
+        <h2>ÚLTIMOS PORTABLES CREADOS</h2>
+
+        <div
+            id="games"
+            class="grid">
+        </div>
+
+    </main>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="#">YouTube</a>
+
+            <span>·</span>
+
+            <a href="#">Contacto</a>
+
+        </div>
+
+        <p>
+
+            👁️ Visitas
+
+            <br>
+
+            <span id="visitCounter">
+                Próximamente
+            </span>
+
+        </p>
+
+    </footer>
+
+    <!-- ========================================= -->
+    <!-- DATOS -->
+    <!-- ========================================= -->
+
+    <script src="games.js"></script>
+
+    <!-- ========================================= -->
+    <!-- FUNCIONALIDAD -->
+    <!-- ========================================= -->
+
+    <script src="script.js"></script>
 
 </body>
 
