@@ -1,6 +1,19 @@
 const games = [
 
-    {
+{
+    nombre: "Windjammers",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/27D8rZ2h/Windjammers.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MC9EPzSZ"
+},  
+    
+{
     nombre: "Robocop",
     categoria: "Acción",
     jugadores: "1",
