@@ -1,6 +1,58 @@
 const games = [
 
-    {
+ {
+    nombre: "Golden Axe The Revenge of Death Adder",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/JkbyRx6/golden-axe-the-revenge-of-seath-adder.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/o7zr1IA"
+}, 
+    
+ {
+    nombre: "Warriors of Fate",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/k60b6d1/warriors-of-fate.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/NMTFNBxG"
+}, 
+    
+ {
+    nombre: "Dungeons and Dragons Shadow of Mystara",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/MhKySD2/Dungeons-and-Dragons-Shadow-Over-Mystara.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/omUyhal"
+}, 
+    
+{
+    nombre: "Dungeons and Dragons Tower of Doom",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/hW98bLc/Dungeons-and-Dragons-tower-of-doom.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ecH7MUF"
+}, 
+    
+ {
     nombre: "Tumblepop",
     categoria: "Puzles",
     jugadores: "1-2",
