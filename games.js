@@ -1,5 +1,18 @@
 const games = [
 
+{
+    nombre: "Sunset Riders",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/31m7TBs/sunsetriders.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/c6vX7"
+}, 
+ 
  {
     nombre: "Cadillacs and Dinosaurs",
     categoria: "Acción",
