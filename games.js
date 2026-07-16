@@ -1,5 +1,18 @@
 const games = [
 
+    {
+    nombre: "Tumblepop",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/J5mZzYJ/Tumblepop.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/paWizy1f"
+}, 
+    
 {
     nombre: "Sunset Riders",
     categoria: "Acción",
