@@ -1,5 +1,18 @@
 const games = [
 
+     {
+    nombre: "Knights of the Round",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/6PsJNHy/knights-of-the-round.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/7LjW4j"
+}, 
+   
    {
     nombre: "Galaxian",
     categoria: "Aviones",
