@@ -1,5 +1,18 @@
 const games = [
 
+  {
+    nombre: "Gunbird 2",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/5g2cnDg5/Gunbird-2.jpg",
+
+    fecha: "17/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/m5ZmlBK"
+}, 
+ 
  {
     nombre: "Gunbird",
     categoria: "Aviones",
@@ -19,7 +32,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/JkbyRx6/golden-axe-the-revenge-of-seath-adder.jpg",
 
-    fecha: "16/07/2026",
+    fecha: "17/07/2026",
 
     descripcion: "",
 
