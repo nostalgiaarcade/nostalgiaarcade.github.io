@@ -4,7 +4,7 @@ const games = [
     nombre: "Radikal Bikers",
     categoria: "Acción",
     jugadores: "1",
-    imagen: "https://i.ibb.co/S0vNKqQ/Miniatura-Radikal-Bikers.jpg",
+    imagen: "https://i.ibb.co/4nwMPMKn/Miniatura-Radikal-Bikers.jpg",
 
     fecha: "17/07/2026",
 
