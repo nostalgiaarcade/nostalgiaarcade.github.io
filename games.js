@@ -1,6 +1,19 @@
 const games = [
 
    {
+    nombre: "Galaxian",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/KzcDGjbX/Galaxian-Miniatura.jpg",
+
+    fecha: "17/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/WjBXB"
+}, 
+   
+   {
     nombre: "Radikal Bikers",
     categoria: "Acción",
     jugadores: "1",
