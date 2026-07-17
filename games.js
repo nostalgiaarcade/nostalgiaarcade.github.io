@@ -1,6 +1,19 @@
 const games = [
 
  {
+    nombre: "Gunbird",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/DDzx0v2Z/Gunbird-1-M.jpg",
+
+    fecha: "16/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/pbYd"
+}, 
+ 
+ {
     nombre: "Golden Axe The Revenge of Death Adder",
     categoria: "Acción",
     jugadores: "1-2",
