@@ -1,5 +1,44 @@
 const games = [
 
+          {
+    nombre: "Puzzle de Pon!",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/cKfBcFzp/Puzzle-De-Pon.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MV1FSLi"
+}, 
+     
+     {
+    nombre: "Gals Panic",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Fqbckj02/gals-panic.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/J1nQzuQW"
+}, 
+     
+     {
+    nombre: "Final Fight",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/r2gPBnH1/final-fight.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/OG45HXW"
+}, 
+     
      {
     nombre: "Knights of the Round",
     categoria: "Acción",
