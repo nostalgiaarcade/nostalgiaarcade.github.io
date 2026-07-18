@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Super Sidekicks 2",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/TqdQwQdm/super-sidekicks-2.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/4qQg"
+},    
+    
+{
     nombre: "Splash",
     categoria: "Puzles",
     jugadores: "1-2",
