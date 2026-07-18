@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Hammerin Harry",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/MkZ3wqJR/hammerin-harry.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/YKWYn"
+},     
+    
+{
     nombre: "The Newzealand Story",
     categoria: "Acción",
     jugadores: "1-2",
