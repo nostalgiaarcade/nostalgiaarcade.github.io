@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Soul Calibur",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/997MT4wX/Soul-Calibur-M.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/5NDD145W"
+},        
+    
+{
     nombre: "Blood Bros",
     categoria: "Acción",
     jugadores: "1-2",
