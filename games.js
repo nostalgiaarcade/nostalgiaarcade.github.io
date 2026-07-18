@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Don Pachi",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/tgfGmdr/don-pachi.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/lUBXwAU"
+},       
+    
+{
     nombre: "Tekken 3",
     categoria: "Peleas",
     jugadores: "1-2",
