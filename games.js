@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Bubble Bobble 3",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/C3Kc7bRB/Bubble-Memories-The-Story-of-Bubble-Bobble-3.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/dM4DJO"
+},      
+    
+{
     nombre: "Bubble Bobble 2",
     categoria: "Puzles",
     jugadores: "1-2",
