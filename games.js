@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Aero Fighters 2",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/5xM059WF/aero-fighters-2.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/WKkkTS"
+},      
+    
+{
     nombre: "Sega Super Ski G",
     categoria: "Deportes",
     jugadores: "1",
