@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Toki",
+    categoria: "Acción",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/23wQNw9x/toki.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/tDmlz1q8"
+},        
+    
+{
     nombre: "The King of Dragons",
     categoria: "Acción",
     jugadores: "1-2",
