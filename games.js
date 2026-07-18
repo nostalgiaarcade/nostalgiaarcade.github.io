@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Snow Bros",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/rKH5Xym2/Snow-Bros.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/7igfkIn9"
+},     
+    
+{
     nombre: "Puzz Loop 2",
     categoria: "Puzles",
     jugadores: "1-2",
