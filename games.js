@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Splash",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/FqfVXQCN/Splash.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Jj9nn"
+},      
+    
+{
     nombre: "Puzzle Bobble 2",
     categoria: "Puzles",
     jugadores: "1-2",
