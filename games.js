@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Sega Super Ski G",
+    categoria: "Deportes",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/XrYvQ3yD/Bot-n-Ski-Super-G-M.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/J0npPJ"
+},       
+    
+{
     nombre: "Snow Bros",
     categoria: "Puzles",
     jugadores: "1-2",
