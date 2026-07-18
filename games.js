@@ -4,7 +4,7 @@ const games = [
     nombre: "Money Puzzle Exchange",
     categoria: "Puzles",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/TD8395H4/street-hoop.jpg",
+    imagen: "https://i.ibb.co/fYwCS22c/money-puzzle-exchanger.jpg",
 
     fecha: "18/07/2026",
 
