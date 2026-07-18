@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzzle Booble - Bust a Move",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/RGFbLhSr/Puzzle-Bobble-Bust-A-Move.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/3BUReNn"
+},     
+    
+{
     nombre: "Money Puzzle Exchange",
     categoria: "Puzles",
     jugadores: "1-2",
