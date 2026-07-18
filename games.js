@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Dodonpachi Daifukkatsu Ver.1.5",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/nsgQX6WT/ddpd-M.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/BC22ZJWY"
+},     
+    
+{
     nombre: "Do Donpachi 3",
     categoria: "Aviones",
     jugadores: "1-2",
