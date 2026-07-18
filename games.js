@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Tekken 3",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/kYBm4Xq/Tekken-3-M.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/p3jQeBnw"
+},      
+    
+{
     nombre: "Thunder & Lightning",
     categoria: "Puzles",
     jugadores: "1-2",
