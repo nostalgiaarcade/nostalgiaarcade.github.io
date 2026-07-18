@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Do Donpachi 2",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/35f6qqNh/do-donpachi-2.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Jrwk"
+}, 
+    
+{
     nombre: "Don Pachi",
     categoria: "Aviones",
     jugadores: "1-2",
