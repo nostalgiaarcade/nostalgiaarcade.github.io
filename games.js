@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Blood Bros",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/FqBpf15D/blood-bros.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/uep0qiR"
+},        
+    
+{
     nombre: "Cabal",
     categoria: "Acción",
     jugadores: "1-2",
