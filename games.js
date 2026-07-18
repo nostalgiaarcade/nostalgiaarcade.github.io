@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzzle Bobble 2",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/BVRRSnBM/Puzzle-Bobble-2-Bust-A-Move-Again.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/GV1dw"
+},      
+    
+{
     nombre: "Aero Fighters 2",
     categoria: "Aviones",
     jugadores: "1-2",
