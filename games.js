@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Neo Turf Masters",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/chr3D8NG/neo-turf-masters.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/6KXH"
+},     
+    
+{
     nombre: "Golden Axe",
     categoria: "Acción",
     jugadores: "1-2",
