@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Thunder & Lightning",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/FLRp91h9/Thunder-Lighting-M.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/koZfMepb"
+},      
+    
+{
     nombre: "Bubble Bobble 3",
     categoria: "Puzles",
     jugadores: "1-2",
