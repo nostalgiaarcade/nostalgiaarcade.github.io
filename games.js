@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "The King of Dragons",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/YT7HbBvQ/the-king-of-dragons.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/pV3wUK"
+},     
+    
+{
     nombre: "Tekken 2",
     categoria: "Peleas",
     jugadores: "1-2",
