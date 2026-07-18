@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Out Run",
+    categoria: "Deportes",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/hx0sm4X0/out-run.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/zd4arFmy"
+},      
+    
+{
     nombre: "Neo Turf Masters",
     categoria: "Deportes",
     jugadores: "1-2",
