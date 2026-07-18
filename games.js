@@ -1,5 +1,31 @@
 const games = [
 
+{
+    nombre: "Money Puzzle Exchange",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/TD8395H4/street-hoop.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/jYgsnF"
+}, 
+          
+{
+    nombre: "Street Hoop",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/TD8395H4/street-hoop.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/rJtVI"
+}, 
+          
           {
     nombre: "Puzzle de Pon!",
     categoria: "Puzles",
