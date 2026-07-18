@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzz Loop 2",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Wp6kYJ1K/Puzz-Loop-2.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/vPvgN"
+},       
+    
+{
     nombre: "Puzzle Booble - Bust a Move",
     categoria: "Puzles",
     jugadores: "1-2",
