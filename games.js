@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "The Newzealand Story",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/VYvNVNTX/the-newzealand-story.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/B6lNS"
+}, 
+    
+{
     nombre: "Super Sidekicks 2",
     categoria: "Deportes",
     jugadores: "1-2",
