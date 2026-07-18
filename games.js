@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Bubble Bobble",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/gZM8YfWS/bubble-bobble-1.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/8Hgvc"
+},         
+    
+{
     nombre: "Puzzle Bobble 4",
     categoria: "Puzles",
     jugadores: "1-2",
