@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Cabal",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/RGZRSV9V/cabal.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/EmRM"
+},       
+    
+{
     nombre: "Dodonpachi Daifukkatsu Ver.1.5",
     categoria: "Aviones",
     jugadores: "1-2",
