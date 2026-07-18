@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Tekken 2",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/5WtbmTRH/Tekken-2-M.jpg",
+
+    fecha: "18/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Xb0Og7n"
+},     
+    
+{
     nombre: "Metal Slug",
     categoria: "Acción",
     jugadores: "1-2",
