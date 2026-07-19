@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "3 Wonders",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/v4DfxtWn/3-wonders.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/NWdAF1"
+},       
+    
+{
     nombre: "X Men vs Street Fighter",
     categoria: "Peleas",
     jugadores: "1-2",
