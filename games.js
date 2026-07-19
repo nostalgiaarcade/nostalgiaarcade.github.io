@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Crime Fighters",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/k2CDnYZ1/crime-fighters.jpg",
+
+    fecha: "20/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/IX2L2"
+},      
+    
+{
     nombre: "Alien vs Predator",
     categoria: "Acción",
     jugadores: "1-2",
