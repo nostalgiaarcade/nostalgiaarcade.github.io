@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "X Men vs Street Fighter",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/pj0QSw92/X-Men-vs-Street-Fighter.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Yad1e"
+},     
+    
+{
     nombre: "Asterix",
     categoria: "Acción",
     jugadores: "1-2",
