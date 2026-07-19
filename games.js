@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Shadow Dancer",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/LXWtBmpP/Shadow-Dancer.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/lM3DyRl"
+},       
+    
+{
     nombre: "Shinobi",
     categoria: "Acción",
     jugadores: "1-2",
