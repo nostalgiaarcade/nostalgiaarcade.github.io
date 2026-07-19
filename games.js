@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Caveman Ninja",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/k2QqTrPR/caveman-ninja-joe-and-mac.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/W8bO4a"
+},      
+    
+{
     nombre: "3 Wonders",
     categoria: "Acción",
     jugadores: "1-2",
