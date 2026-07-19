@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Shinobi",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/BKP1rDK9/Shinobi.jpg",
+
+    fecha: "19/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Ef1Mv"
+},       
+    
+{
     nombre: "Caveman Ninja",
     categoria: "Acción",
     jugadores: "1-2",
