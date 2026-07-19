@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Alien vs Predator",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Vpq17nDx/alien-vs-predator.jpg",
+
+    fecha: "20/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/TdYtYc"
+},          
+    
+{
     nombre: "Shadow Dancer",
     categoria: "Acción",
     jugadores: "1-2",
