@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Ghouls'n Ghosts",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/BVP6kDtB/ghouls-n-ghosts.jpg",
+
+    fecha: "20/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/aqSG"
+},      
+    
+{
     nombre: "Crime Fighters",
     categoria: "Acción",
     jugadores: "1-2",
