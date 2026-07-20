@@ -1,16 +1,16 @@
 /* ==========================================================
-   NOSTALGIA ARCADE
-   SCRIPT.JS v3.0
+ NOSTALGIA ARCADE
+ SCRIPT.JS v3.1
 ========================================================== */
 
 /* ==========================================================
-   CONFIGURACIÓN
+ CONFIGURACIÓN
 ========================================================== */
 
-const LAST_UPDATE = "15 de julio de 2026";
+const LAST_UPDATE = "20 de julio de 2026";
 
 /* ==========================================================
-   ELEMENTOS DEL DOM
+ ELEMENTOS DEL DOM
 ========================================================== */
 
 const gamesContainer = document.getElementById("games");
@@ -19,50 +19,33 @@ const categoryButtons = document.querySelectorAll(".category");
 const gameCounter = document.getElementById("gameCounter");
 
 /* ==========================================================
-   ESTADO
+ ESTADO
 ========================================================== */
 
 let currentCategory = "Todos";
 let currentSearch = "";
 
 /* ==========================================================
-   COLORES DE CATEGORÍA
+ COLORES DE CATEGORÍA
 ========================================================== */
 
 const categoryColors = {
-
     "Acción": "amarillo",
     "Peleas": "rojo",
     "Aviones": "azul",
     "Deportes": "verde",
     "Puzles": "morado"
-
 };
 
 function getCategoryClass(category) {
-
     return categoryColors[category] || "blanco";
-
 }
 
 /* ==========================================================
-   CONTADOR SUPERIOR
-========================================================== */
-
-function updateGameCounter() {
-
-    if (!gameCounter) return;
-
-    gameCounter.textContent = `🎮 ${games.length} Portables disponibles`;
-
-}
-
-/* ==========================================================
-   FILTRADO
+ FILTRADO
 ========================================================== */
 
 function getFilteredGames() {
-
     return games.filter(game => {
 
         const categoryMatch =
@@ -75,13 +58,35 @@ function getFilteredGames() {
                 .includes(currentSearch.toLowerCase());
 
         return categoryMatch && searchMatch;
-
     });
+}
+
+/* ==========================================================
+ CONTADOR SUPERIOR
+========================================================== */
+
+function updateGameCounter() {
+
+    if (!gameCounter) return;
+
+    const total = getFilteredGames().length;
+
+    if (currentCategory === "Todos") {
+
+        gameCounter.textContent =
+            `🎮 ${total} Portables disponibles`;
+
+    } else {
+
+        gameCounter.textContent =
+            `🎮 ${total} juegos de ${currentCategory}`;
+
+    }
 
 }
 
 /* ==========================================================
-   TARJETA
+ TARJETA
 ========================================================== */
 
 function createGameCard(game) {
@@ -128,7 +133,7 @@ function createGameCard(game) {
 }
 
 /* ==========================================================
-   MENSAJE SIN RESULTADOS
+ MENSAJE SIN RESULTADOS
 ========================================================== */
 
 function renderEmptyMessage() {
@@ -139,19 +144,23 @@ function renderEmptyMessage() {
             grid-column:1/-1;
             font-size:22px;
             color:#999;">
+
             No se encontraron juegos.
+
         </p>
     `;
 
 }
 
 /* ==========================================================
-   RENDER
+ RENDER
 ========================================================== */
 
 function renderGames() {
 
     const filteredGames = getFilteredGames();
+
+    updateGameCounter();
 
     if (!filteredGames.length) {
 
@@ -167,7 +176,7 @@ function renderGames() {
 }
 
 /* ==========================================================
-   BUSCADOR
+ BUSCADOR
 ========================================================== */
 
 function handleSearch(event) {
@@ -179,7 +188,7 @@ function handleSearch(event) {
 }
 
 /* ==========================================================
-   CATEGORÍAS
+ CATEGORÍAS
 ========================================================== */
 
 function handleCategory(event) {
@@ -197,7 +206,7 @@ function handleCategory(event) {
 }
 
 /* ==========================================================
-   EVENTOS
+ EVENTOS
 ========================================================== */
 
 searchInput.addEventListener("input", handleSearch);
@@ -209,70 +218,40 @@ categoryButtons.forEach(button => {
 });
 
 /* ==========================================================
-   INICIO
+ INICIO
 ========================================================== */
-
-updateGameCounter();
 
 renderGames();
 
 /* ==========================================================
-   PROTECCIÓN WEB - NOSTALGIA ARCADE
+ PROTECCIÓN WEB
 ========================================================== */
 
 (() => {
 
-    // Bloquear menú contextual (botón derecho)
-    document.addEventListener("contextmenu", e => {
-        e.preventDefault();
-    });
+    document.addEventListener("contextmenu", e => e.preventDefault());
 
-    // Bloquear selección de texto
-    document.addEventListener("selectstart", e => {
-        e.preventDefault();
-    });
+    document.addEventListener("selectstart", e => e.preventDefault());
 
-    // Bloquear arrastrar imágenes
     document.addEventListener("dragstart", e => {
-        if (e.target.tagName === "IMG") {
-            e.preventDefault();
-        }
+        if (e.target.tagName === "IMG") e.preventDefault();
     });
 
-    // Bloquear copiar
-    document.addEventListener("copy", e => {
-        e.preventDefault();
-    });
+    document.addEventListener("copy", e => e.preventDefault());
 
-    // Bloquear atajos habituales
     document.addEventListener("keydown", e => {
 
         const key = e.key.toUpperCase();
 
-        // F12
-        if (e.key === "F12") {
-            e.preventDefault();
-        }
+        if (e.key === "F12") e.preventDefault();
 
-        // Ctrl + U
-        if (e.ctrlKey && key === "U") {
-            e.preventDefault();
-        }
+        if (e.ctrlKey && key === "U") e.preventDefault();
 
-        // Ctrl + Shift + I
-        if (e.ctrlKey && e.shiftKey && key === "I") {
-            e.preventDefault();
-        }
+        if (e.ctrlKey && e.shiftKey && key === "I") e.preventDefault();
 
-        // Ctrl + Shift + J
-        if (e.ctrlKey && e.shiftKey && key === "J") {
-            e.preventDefault();
-        }
+        if (e.ctrlKey && e.shiftKey && key === "J") e.preventDefault();
 
-        // Ctrl + Shift + C
-        if (e.ctrlKey && e.shiftKey && key === "C") {
-            e.preventDefault();
-        }
+        if (e.ctrlKey && e.shiftKey && key === "C") e.preventDefault();
 
     });
 
