@@ -83,7 +83,7 @@ function updateGameCounter() {
 
     if (currentCategory === "Todos") {
 
-        gameCounter.classList.add("amarillo");
+        gameCounter.classList.add("naranja");
 
         gameCounter.textContent =
             `🎮 ${total} Portables disponibles`;
