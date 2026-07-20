@@ -71,18 +71,32 @@ function updateGameCounter() {
 
     const total = getFilteredGames().length;
 
+    // Quitar colores anteriores
+    gameCounter.classList.remove(
+        "amarillo",
+        "rojo",
+        "azul",
+        "verde",
+        "morado",
+        "blanco"
+    );
+
     if (currentCategory === "Todos") {
+
+        gameCounter.classList.add("amarillo");
 
         gameCounter.textContent =
             `🎮 ${total} Portables disponibles`;
 
     } else {
 
+        // Añadir el color correspondiente
+        gameCounter.classList.add(getCategoryClass(currentCategory));
+
         gameCounter.textContent =
             `🎮 ${total} juegos de ${currentCategory}`;
 
     }
-
 }
 
 /* ==========================================================
