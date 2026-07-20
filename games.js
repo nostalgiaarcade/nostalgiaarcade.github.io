@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "The Simpsons",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/0ynfK78L/the-simpsons.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/tS58"
+},        
+    
+{
     nombre: "Ghouls'n Ghosts",
     categoria: "Acción",
     jugadores: "1-2",
