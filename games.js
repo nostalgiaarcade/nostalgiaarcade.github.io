@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Shock Troopers",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/p6dDdpjv/Shock-Troopers.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/k3zf0"
+},        
+    
+{
     nombre: "Willow",
     categoria: "Acción",
     jugadores: "1-2",
