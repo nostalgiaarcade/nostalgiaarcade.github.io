@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Willow",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/k6810Lvv/willow.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/S3QTmx"
+},     
+    
+{
     nombre: "Thunder Hoop",
     categoria: "Acción",
     jugadores: "1-2",
