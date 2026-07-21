@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzz Loop",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/tPxQ4Nvj/Puzz-Loop.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MGiWmxO"
+},    
+    
+{
     nombre: "Shock Troopers",
     categoria: "Acción",
     jugadores: "1-2",
