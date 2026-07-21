@@ -3,7 +3,7 @@ const games = [
     nombre: "Mazinger Z",
     categoria: "Aviones",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/gFhFbyRW/mazinger-z.jpg",
+    imagen: "https://i.ibb.co/YBdg6F5Z/Mazinger-Z-M.jpg",
 
     fecha: "22/07/2026",
 
