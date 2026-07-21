@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Dinamite Düx",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/bRrNK5yL/dynamite-dux.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/tdASe"
+},      
+    
+{
     nombre: "E-Swat",
     categoria: "Acción",
     jugadores: "1-2",
