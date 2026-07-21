@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Thunder Hoop",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/mV58hQJY/Thunder-Hoop-Miniatura.jpg",
+
+    fecha: "21/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/EWZHtj2l"
+},      
+    
+{
     nombre: "Dinamite Düx",
     categoria: "Acción",
     jugadores: "1-2",
