@@ -1,5 +1,17 @@
 const games = [
+{
+    nombre: "Mazinger Z",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/gFhFbyRW/mazinger-z.jpg",
 
+    fecha: "22/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/iteTQ"
+},   
+    
 {
     nombre: "Puzzle de Pon R",
     categoria: "Puzles",
