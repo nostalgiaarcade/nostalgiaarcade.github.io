@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzzle de Pon R",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/99rBVMx4/Puzzle-de-Pon-R.jpg",
+
+    fecha: "22/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/9H3KyW"
+},    
+    
+{
     nombre: "Puzz Loop",
     categoria: "Puzles",
     jugadores: "1-2",
