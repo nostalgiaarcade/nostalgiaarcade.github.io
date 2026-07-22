@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Tehkan World Cup",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/sMcLFrC/Tehkan-World-Cup.jpg",
+
+    fecha: "22/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/i0I1q"
+},        
+    
+{
     nombre: "Captain Commando",
     categoria: "Acción",
     jugadores: "1-2",
