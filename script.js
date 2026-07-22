@@ -72,15 +72,14 @@ function updateGameCounter() {
     const total = getFilteredGames().length;
 
     // Quitar colores anteriores
-   gameCounter.classList.remove(
-  "naranja",
-  "amarillo",
-  "rojo",
-  "azul",
-  "verde",
-  "morado",
-  "blanco"
-);
+    gameCounter.classList.remove(
+        "amarillo",
+        "rojo",
+        "azul",
+        "verde",
+        "morado",
+        "blanco"
+    );
 
     if (currentCategory === "Todos") {
 
@@ -271,7 +270,3 @@ renderGames();
     });
 
 })();
-
-window.addEventListener("load", () => {
-    document.getElementById("splash").style.display = "none";
-});
