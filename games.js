@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Super Sidekicks 3",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/JRFN0tZt/super-sidekicks-3-the-next-glory.jpg",
+
+    fecha: "23/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/7Btkt"
+},    
+    
+{
     nombre: "Super Sidekicks",
     categoria: "Deportes",
     jugadores: "1-2",
