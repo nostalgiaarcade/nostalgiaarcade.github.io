@@ -271,3 +271,7 @@ renderGames();
     });
 
 })();
+
+window.addEventListener("load", () => {
+    document.getElementById("splash").style.display = "none";
+});
