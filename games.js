@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Super Sidekicks",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/jPd9NrwH/super-sidekicks.jpg",
+
+    fecha: "23/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/nsr1x"
+},       
+    
+{
     nombre: "Tehkan World Cup",
     categoria: "Deportes",
     jugadores: "1-2",
