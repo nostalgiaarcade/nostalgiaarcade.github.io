@@ -1,4 +1,18 @@
 const games = [
+
+{
+    nombre: "Captain Commando",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.postimg.cc/vTP1svqH/Captain-Commando-M.jpg",
+
+    fecha: "22/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/HXoQ3lDB"
+},      
+    
 {
     nombre: "Mazinger Z",
     categoria: "Aviones",
