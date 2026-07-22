@@ -880,19 +880,3 @@ footer p{
 .footer-donate a:hover{
     color:white;
 }
-
-#splash{
-    position:fixed;
-    inset:0;
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
-}
-
-#splash h1{
-    font-size:44px;
-    font-weight:500;
-    color:#222;
-}
