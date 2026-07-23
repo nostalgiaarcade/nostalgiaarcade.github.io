@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Waku Waku 7",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/gFJBdjML/Waku-Waku-7.jpg",
+
+    fecha: "23/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/042YoMi"
+},     
+    
+{
     nombre: "Soccer Brawl",
     categoria: "Deportes",
     jugadores: "1-2",
