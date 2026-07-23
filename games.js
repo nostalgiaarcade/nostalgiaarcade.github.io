@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Funky Jet",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/rGZyDY16/funky-jet.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Rwpud"
+},     
+    
+{
     nombre: "Dragon Blaze",
     categoria: "Aviones",
     jugadores: "1-2",
