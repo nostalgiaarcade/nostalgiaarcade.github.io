@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Dragon Blaze",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/PvHw6wPz/Dragon-Blaze-M-copia.jpg",
+
+    fecha: "23/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/KxBgbPMA"
+},         
+    
+{
     nombre: "Waku Waku 7",
     categoria: "Peleas",
     jugadores: "1-2",
