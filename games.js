@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Dark Seal",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/My0qcyPk/dark-seal.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/PpSp9"
+}, 
+    
+{
     nombre: "Columns",
     categoria: "Puzles",
     jugadores: "1-2",
