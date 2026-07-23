@@ -10,7 +10,7 @@ const games = [
 
     descripcion: "",
 
-    link: ""
+    link: "https://shrinkme.click/oUBl9"
 },     
     
 {
