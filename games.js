@@ -4,7 +4,7 @@ const games = [
     nombre: "Dragon Blaze",
     categoria: "Aviones",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/PvHw6wPz/Dragon-Blaze-M-copia.jpg",
+    imagen: "https://i.ibb.co/hJymdCsD/Dragon-Blaze-M-copia.jpg",
 
     fecha: "23/07/2026",
 
