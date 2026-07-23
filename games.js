@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Columns",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Q3tvC4DQ/columns.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/W9fBXy5J"
+},     
+    
+{
     nombre: "Funky Jet",
     categoria: "Puzles",
     jugadores: "1-2",
