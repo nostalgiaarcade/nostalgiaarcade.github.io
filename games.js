@@ -2,7 +2,7 @@ const games = [
 
 {
     nombre: "Dragon Blaze",
-    categoria: "Peleas",
+    categoria: "Aviones",
     jugadores: "1-2",
     imagen: "https://i.ibb.co/PvHw6wPz/Dragon-Blaze-M-copia.jpg",
 
