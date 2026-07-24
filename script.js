@@ -76,7 +76,7 @@ function getFilteredGames() {
 
 function getGameUrl(slug) {
     const url = new URL(CONFIG.SITE_URL);
-    url.searchParams.set("game", slug);
+    url.hash = `game-${slug}`;
     return url.toString();
 }
 
@@ -111,7 +111,7 @@ function createGameCard(game) {
     const slug = getGameSlug(game);
 
     return `
-        <article class="card" data-game-slug="${slug}" tabindex="-1">
+        <article class="card" id="game-${slug}" data-game-slug="${slug}" tabindex="-1">
             <img src="${escapeHtml(game.imagen)}" alt="${escapeHtml(game.nombre)}" loading="lazy">
             <div class="card-content">
                 <h3>${escapeHtml(game.nombre)}</h3>
@@ -153,25 +153,17 @@ function renderGames() {
     if (!filteredGames.length) renderEmptyMessage();
 }
 
-function highlightDeepLinkedGame() {
+function activateDeepLinkedGame() {
     const slug = new URLSearchParams(window.location.search).get("game");
     if (!slug) return;
 
-    // Evita CSS.escape(), que no está disponible en algunos navegadores móviles.
+    // Conserva la compatibilidad con enlaces antiguos que usaban ?game=.
     const card = Array.from(gamesContainer.querySelectorAll(".card"))
         .find(gameCard => gameCard.dataset.gameSlug === slug);
 
     if (!card) return;
 
-    card.classList.add("is-highlighted");
-
-    // El pequeño retraso asegura que el diseño ya esté calculado en móviles.
-    window.setTimeout(() => {
-        const top = card.getBoundingClientRect().top + window.scrollY - 24;
-        window.scrollTo({ top, behavior: "smooth" });
-    }, 120);
-
-    window.setTimeout(() => card.classList.remove("is-highlighted"), 3000);
+    window.location.hash = card.id;
 }
 
 function showToast(message) {
@@ -231,7 +223,7 @@ gamesContainer.addEventListener("click", handleCardAction);
 
 applyGlobalLinks();
 renderGames();
-highlightDeepLinkedGame();
+activateDeepLinkedGame();
 
 /* Protección web existente. */
 (() => {
