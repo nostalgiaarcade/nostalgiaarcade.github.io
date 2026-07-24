@@ -1050,7 +1050,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/sxJpGQWf"
+    link: "https://www.mediafire.com/file/4kcxa2h86az96po/Kabuki_Klash.rar/file"
 },  
     
 {
@@ -1063,7 +1063,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/MC9EPzSZ"
+    link: "https://www.mediafire.com/file/229l7evs2nxmd57/Windjammers.rar/file"
 },  
     
 {
@@ -1076,7 +1076,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/0FoUe"
+    link: "https://www.mediafire.com/file/4l376j79k62rnsk/Robocop.rar/file"
 },  
     
 {
@@ -1089,7 +1089,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/IPqsye8C"
+    link: "https://www.mediafire.com/file/vfhyxbo31u7ut9j/Spin_Master.rar/file"
 },    
     
 {
@@ -1102,7 +1102,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/gGCvm"
+    link: "https://www.mediafire.com/file/e6xw74dfkn7rlyz/Pang.rar/file"
 },
     
 {
@@ -1128,7 +1128,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/x2UHp"
+    link: "https://www.mediafire.com/file/ts9l3xjapz5go43/Pang_3.rar/file"
 },
 
 {
@@ -1141,7 +1141,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/vgD8TR"
+    link: "https://www.mediafire.com/file/3sqnd3oghzjumzm/Robocop_2.rar/file"
 }
 
 ];
