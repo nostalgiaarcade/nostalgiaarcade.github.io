@@ -5,7 +5,7 @@
 
 const CONFIG = Object.freeze({
     DONATE_LINK: "https://www.paypal.com/donate/?hosted_button_id=XJSCL7BK6GJW6",
-    SITE_URL: "https://nostalgiaarcade.github.io/",
+    SITE_URL: "https://nostalgiaarcade.es/",
     SHARE_TEXT: "Descubre este juego en Nostalgia Arcade"
 });
 
@@ -90,17 +90,20 @@ function escapeHtml(value) {
     }[character]));
 }
 
-function shareIcon(name, path) {
-    return `<button class="share-button" type="button" data-share="${name}" aria-label="Compartir por ${name}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"></path></svg></button>`;
+function shareIcon(name, path, url) {
+    return `<a class="share-button" data-share="${name}" href="${url}" target="_blank" rel="noopener noreferrer" aria-label="Compartir por ${name}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="${path}"></path></svg></a>`;
 }
 
-function createShareButtons() {
+function createShareButtons(slug) {
+    const gameUrl = getGameUrl(slug);
+    const sharedText = CONFIG.SHARE_TEXT;
+
     return [
-        shareIcon("whatsapp", "M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.2.3 11.7c0 2.1.5 4.1 1.5 5.9L.1 24l6.6-1.7a11.7 11.7 0 0 0 5.4 1.3h.1c6.5 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6-3.4-8.2ZM12.1 21.6a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.1-1.8-.9-2-1s-.4-.1-.6.1c-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.4-3.9-3.2-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4s-1 1-1 2.5 1 2.9 1.1 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.8.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.3Z"),
-        shareIcon("telegram", "M21.7 3.2 18.4 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L5.8 13.6 1 12.1c-1-.3-1-1 .2-1.5L20 3.3c.9-.3 1.7.2 1.7-.1Z"),
-        shareIcon("facebook", "M14 8h3V4h-3c-3.3 0-6 2.7-6 6v2H5v4h3v8h4v-8h3l1-4h-4v-2c0-1.1.9-2 2-2Z"),
-        shareIcon("x", "M18.9 2H22l-6.8 7.8 8 10.2H17l-4.8-6.1L6.9 20H3.8l7.3-8.4L3.4 2h6.3l4.3 5.5L18.9 2Zm-1.1 16h1.7L8.8 3.9H7L17.8 18Z"),
-        shareIcon("copy", "M16 1H4C2.3 1 1 2.3 1 4v12h3V4h12V1Zm4 5H8c-1.7 0-3 1.3-3 3v12c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V9c0-1.7-1.3-3-3-3Zm0 15H8V9h12v12Z")
+        shareIcon("whatsapp", "M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.2.3 11.7c0 2.1.5 4.1 1.5 5.9L.1 24l6.6-1.7a11.7 11.7 0 0 0 5.4 1.3h.1c6.5 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6-3.4-8.2ZM12.1 21.6a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.9 1 1-3.8-.3-.4a9.8 9.8 0 1 1 8.6 4.8Zm5.4-7.3c-.3-.1-1.8-.9-2-1s-.4-.1-.6.1c-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.4-3.9-3.2-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.6-.4h-.5c-.2 0-.5.1-.7.4s-1 1-1 2.5 1 2.9 1.1 3.1c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.8.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.3Z", SHARE_PROVIDERS.whatsapp(gameUrl, sharedText)),
+        shareIcon("telegram", "M21.7 3.2 18.4 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.3L5.8 13.6 1 12.1c-1-.3-1-1 .2-1.5L20 3.3c.9-.3 1.7.2 1.7-.1Z", SHARE_PROVIDERS.telegram(gameUrl, sharedText)),
+        shareIcon("facebook", "M14 8h3V4h-3c-3.3 0-6 2.7-6 6v2H5v4h3v8h4v-8h3l1-4h-4v-2c0-1.1.9-2 2-2Z", SHARE_PROVIDERS.facebook(gameUrl)),
+        shareIcon("x", "M18.9 2H22l-6.8 7.8 8 10.2H17l-4.8-6.1L6.9 20H3.8l7.3-8.4L3.4 2h6.3l4.3 5.5L18.9 2Zm-1.1 16h1.7L8.8 3.9H7L17.8 18Z", SHARE_PROVIDERS.x(gameUrl, sharedText)),
+        `<button class="share-button" type="button" data-share="copy" aria-label="Copiar enlace"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4C2.3 1 1 2.3 1 4v12h3V4h12V1Zm4 5H8c-1.7 0-3 1.3-3 3v12c0 1.7 1.3 3 3 3h12c1.7 0 3-1.3 3-3V9c0-1.7-1.3-3-3-3Zm0 15H8V9h12v12Z"></path></svg></button>`
     ].join("");
 }
 
@@ -119,7 +122,7 @@ function createGameCard(game) {
                 <a class="donate" href="${CONFIG.DONATE_LINK}" target="_blank" rel="noopener">☕ Invítame a un café</a>
                 <div class="share-section">
                     <p>Comparte este juego</p>
-                    <div class="share-actions">${createShareButtons()}</div>
+                    <div class="share-actions">${createShareButtons(slug)}</div>
                 </div>
             </div>
         </article>`;
@@ -181,8 +184,6 @@ function handleCardAction(event) {
         return;
     }
 
-    const shareUrl = SHARE_PROVIDERS[provider]?.(url, CONFIG.SHARE_TEXT);
-    if (shareUrl) window.open(shareUrl, "_blank", "noopener,noreferrer");
 }
 
 function highlightDeepLinkedGame() {
