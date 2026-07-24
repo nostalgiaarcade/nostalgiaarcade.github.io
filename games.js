@@ -803,7 +803,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/vPvgN"
+    link: "https://www.mediafire.com/file/bhcv0vz5q09p5d2/Puzz_Loop_2.rar/file"
 },       
     
 {
@@ -816,7 +816,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/3BUReNn"
+    link: "https://www.mediafire.com/file/cb4a7in61dbmyub/Puzzle_Booble_-_Bust_a_Move.rar/file"
 },     
     
 {
@@ -829,7 +829,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/jYgsnF"
+    link: "https://www.mediafire.com/file/br1mtc7pff7qff7/Money_Puzzle_Exchange.rar/file"
 }, 
           
 {
@@ -842,7 +842,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/rJtVI"
+    link: "https://www.mediafire.com/file/q66pzpedo9psek2/Street_Hoop.rar/file"
 }, 
           
           {
@@ -855,7 +855,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/MV1FSLi"
+    link: "https://www.mediafire.com/file/lmu1aqq2rxott68/Puzzle_de_Pon%2521.rar/file"
 }, 
      
      {
