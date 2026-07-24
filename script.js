@@ -6,7 +6,7 @@
 const CONFIG = Object.freeze({
     DONATE_LINK: "https://www.paypal.com/donate/?hosted_button_id=XJSCL7BK6GJW6",
     SITE_URL: "https://nostalgiaarcade.es/",
-    SHARE_TEXT: "Descubre Nostalgia Arcade"
+    SHARE_TEXT: "Juegos arcade clásicos portables para Windows."
 });
 
 const gamesContainer = document.getElementById("games");
