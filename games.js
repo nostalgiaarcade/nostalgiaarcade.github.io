@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Battle Flip Shot",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/nMqGX48W/battle-flip-shot.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/JyAPS"
+},       
+    
+{
     nombre: "Goal! Goal! Goal!",
     categoria: "Deportes",
     jugadores: "1-2",
