@@ -6,7 +6,7 @@
 const CONFIG = Object.freeze({
     DONATE_LINK: "https://www.paypal.com/donate/?hosted_button_id=XJSCL7BK6GJW6",
     SITE_URL: "https://nostalgiaarcade.es/",
-    SHARE_TEXT: "Descubre este proyecto en Nostalgia Arcade"
+    SHARE_TEXT: "Descubre Nostalgia Arcade"
 });
 
 const gamesContainer = document.getElementById("games");
