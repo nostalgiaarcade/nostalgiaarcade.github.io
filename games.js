@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Gunbarich",
+    categoria: "Puzles",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/7J3Z5D28/Gunbarich-M.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/JXTg5df"
+},          
+    
+{
     nombre: "Battle Flip Shot",
     categoria: "Deportes",
     jugadores: "1-2",
