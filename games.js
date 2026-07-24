@@ -868,7 +868,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/J1nQzuQW"
+    link: "https://www.mediafire.com/file/op8j6o54113if01/Gals_Panic.rar/file"
 }, 
      
      {
@@ -881,20 +881,20 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/OG45HXW"
+    link: "https://www.mediafire.com/file/rdywqeg40vkqlt2/Final_Fight.rar/file"
 }, 
      
      {
     nombre: "Knights of the Round",
     categoria: "Acción",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/6PsJNHy/knights-of-the-round.jpg",
+    imagen: "",
 
     fecha: "18/07/2026",
 
-    descripcion: "",
+    descripcion: "https://i.ibb.co/V0Wg8qv8/knights-of-the-round.jpg,
 
-    link: "https://shrinkme.click/7LjW4j"
+    link: "https://www.mediafire.com/file/2smr26aw2hrdjzk/Kinghts_of_the_Round.rar/file"
 }, 
    
    {
@@ -907,7 +907,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/WjBXB"
+    link: "https://www.mediafire.com/file/762iaeeqm74xjrw/Galaxian.rar/file"
 }, 
    
    {
@@ -920,7 +920,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/t3v6H"
+    link: "https://www.mediafire.com/file/rxgpjuz3w3tfa52/Radikal_Bikers.rar/file"
 }, 
   
   {
@@ -933,7 +933,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/m5ZmlBK"
+    link: "https://www.mediafire.com/file/v87cuoc01x70vlr/Gunbird_2.rar/file"
 }, 
  
  {
@@ -946,7 +946,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/pbYd"
+    link: "https://www.mediafire.com/file/mfp0uhbhwidueao/Gunbird.rar/file"
 }, 
  
  {
@@ -959,7 +959,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/o7zr1IA"
+    link: "https://www.mediafire.com/file/05iuixefheby8xa/Golden_Axe_The_Revenge_of_Death_Adder.rar/file"
 }, 
     
  {
@@ -972,7 +972,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/NMTFNBxG"
+    link: "https://www.mediafire.com/file/qe9lg3f8hiniq7a/Warriors_of_Fate.rar/file"
 }, 
     
  {
@@ -985,7 +985,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/omUyhal"
+    link: "https://www.mediafire.com/file/gxzfsx1w5rg9gs6/Dungeons_and_Dragons_Shadow_of_Mystara.rar/file"
 }, 
     
 {
@@ -998,7 +998,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/ecH7MUF"
+    link: "https://www.mediafire.com/file/xoa0l2616w60k8c/Dungeons_and_Dragons_Tower_of_Doom.rar/file"
 }, 
     
  {
@@ -1011,7 +1011,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/paWizy1f"
+    link: "https://www.mediafire.com/file/tk1loiryp5q9v44/Tumblepop.rar/file"
 }, 
     
 {
@@ -1024,7 +1024,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/c6vX7"
+    link: "https://www.mediafire.com/file/9uubyovy2hs8f31/Sunset_Riders.rar/file"
 }, 
  
  {
