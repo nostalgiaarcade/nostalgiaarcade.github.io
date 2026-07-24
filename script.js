@@ -154,7 +154,12 @@ function renderGames() {
 }
 
 function activateDeepLinkedGame() {
-    const slug = new URLSearchParams(window.location.search).get("game");
+    const legacySlug = new URLSearchParams(window.location.search).get("game");
+    const hashSlug = window.location.hash.startsWith("#game-")
+        ? window.location.hash.slice(6)
+        : "";
+    const slug = legacySlug || hashSlug;
+
     if (!slug) return;
 
     // Conserva la compatibilidad con enlaces antiguos que usaban ?game=.
@@ -163,7 +168,19 @@ function activateDeepLinkedGame() {
 
     if (!card) return;
 
-    window.location.hash = card.id;
+    if (legacySlug) {
+        window.history.replaceState(null, "", `#${card.id}`);
+    }
+
+    card.classList.add("is-highlighted");
+
+    // En algunos móviles el ancla se procesa antes de que las tarjetas existan.
+    // Forzamos el desplazamiento una vez renderizado el catálogo.
+    window.requestAnimationFrame(() => {
+        card.scrollIntoView({ block: "center", behavior: "auto" });
+    });
+
+    window.setTimeout(() => card.classList.remove("is-highlighted"), 3000);
 }
 
 function showToast(message) {
