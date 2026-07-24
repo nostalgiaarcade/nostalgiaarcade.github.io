@@ -86,7 +86,7 @@ function createGameCard(game) {
                 <p class="game-date">📅 ${escapeHtml(game.fecha)}</p>
                 <p class="players">👥 ${escapeHtml(game.jugadores)}</p>
                 <a class="download" href="${escapeHtml(game.link)}" target="_blank" rel="noopener">Descargar</a>
-                <a class="donate" href="${CONFIG.DONATE_LINK}" target="_blank" rel="noopener">☕ Invítame a un café</a>
+                <a class="donate" href="${CONFIG.DONATE_LINK}" target="_blank" rel="noopener">Descarga sin publicidad</a>
                 <div class="share-section">
                     <p>Comparte este proyecto</p>
                     <div class="share-actions">${createShareButtons()}</div>
