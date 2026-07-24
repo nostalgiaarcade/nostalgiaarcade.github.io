@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Goal! Goal! Goal!",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/ymrJ1VsS/goal-goal-goal.jpg",
+
+    fecha: "24/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/S5eojOu"
+},     
+    
+{
     nombre: "Dark Seal",
     categoria: "Acción",
     jugadores: "1-2",
