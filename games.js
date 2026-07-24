@@ -803,7 +803,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/bhcv0vz5q09p5d2/Puzz_Loop_2.rar/file"
+    link: "https://shrinkme.click/vPvgN"
 },       
     
 {
@@ -816,7 +816,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/cb4a7in61dbmyub/Puzzle_Booble_-_Bust_a_Move.rar/file"
+    link: "https://shrinkme.click/3BUReNn"
 },     
     
 {
@@ -829,7 +829,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/br1mtc7pff7qff7/Money_Puzzle_Exchange.rar/file"
+    link: "https://shrinkme.click/jYgsnF"
 }, 
           
 {
@@ -842,7 +842,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/q66pzpedo9psek2/Street_Hoop.rar/file"
+    link: "https://shrinkme.click/rJtVI"
 }, 
           
           {
@@ -855,7 +855,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/lmu1aqq2rxott68/Puzzle_de_Pon%2521.rar/file"
+    link: "https://shrinkme.click/MV1FSLi"
 }, 
      
      {
@@ -868,7 +868,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/op8j6o54113if01/Gals_Panic.rar/file"
+    link: "https://shrinkme.click/J1nQzuQW"
 }, 
      
      {
@@ -881,20 +881,20 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/rdywqeg40vkqlt2/Final_Fight.rar/file"
+    link: "https://shrinkme.click/OG45HXW"
 }, 
      
      {
     nombre: "Knights of the Round",
     categoria: "Acción",
     jugadores: "1-2",
-    imagen: "",
+    imagen: "https://i.ibb.co/6PsJNHy/knights-of-the-round.jpg",
 
     fecha: "18/07/2026",
 
-    descripcion: "https://i.ibb.co/V0Wg8qv8/knights-of-the-round.jpg,
+    descripcion: "",
 
-    link: "https://www.mediafire.com/file/2smr26aw2hrdjzk/Kinghts_of_the_Round.rar/file"
+    link: "https://shrinkme.click/7LjW4j"
 }, 
    
    {
@@ -907,7 +907,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/762iaeeqm74xjrw/Galaxian.rar/file"
+    link: "https://shrinkme.click/WjBXB"
 }, 
    
    {
@@ -920,7 +920,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/rxgpjuz3w3tfa52/Radikal_Bikers.rar/file"
+    link: "https://shrinkme.click/t3v6H"
 }, 
   
   {
@@ -933,7 +933,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/v87cuoc01x70vlr/Gunbird_2.rar/file"
+    link: "https://shrinkme.click/m5ZmlBK"
 }, 
  
  {
@@ -946,7 +946,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/mfp0uhbhwidueao/Gunbird.rar/file"
+    link: "https://shrinkme.click/pbYd"
 }, 
  
  {
@@ -959,7 +959,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/05iuixefheby8xa/Golden_Axe_The_Revenge_of_Death_Adder.rar/file"
+    link: "https://shrinkme.click/o7zr1IA"
 }, 
     
  {
@@ -972,7 +972,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/qe9lg3f8hiniq7a/Warriors_of_Fate.rar/file"
+    link: "https://shrinkme.click/NMTFNBxG"
 }, 
     
  {
@@ -985,7 +985,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/gxzfsx1w5rg9gs6/Dungeons_and_Dragons_Shadow_of_Mystara.rar/file"
+    link: "https://shrinkme.click/omUyhal"
 }, 
     
 {
@@ -998,7 +998,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/xoa0l2616w60k8c/Dungeons_and_Dragons_Tower_of_Doom.rar/file"
+    link: "https://shrinkme.click/ecH7MUF"
 }, 
     
  {
@@ -1011,7 +1011,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/tk1loiryp5q9v44/Tumblepop.rar/file"
+    link: "https://shrinkme.click/paWizy1f"
 }, 
     
 {
@@ -1024,7 +1024,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/9uubyovy2hs8f31/Sunset_Riders.rar/file"
+    link: "https://shrinkme.click/c6vX7"
 }, 
  
  {
@@ -1037,7 +1037,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/2zywnfr016e1u0z/Cadillacs_and_Dinosaurs.rar/file"
+    link: "https://shrinkme.click/TwzlFlJr"
 },     
     
 {
@@ -1050,7 +1050,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/4kcxa2h86az96po/Kabuki_Klash.rar/file"
+    link: "https://shrinkme.click/sxJpGQWf"
 },  
     
 {
@@ -1063,7 +1063,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/229l7evs2nxmd57/Windjammers.rar/file"
+    link: "https://shrinkme.click/MC9EPzSZ"
 },  
     
 {
@@ -1076,7 +1076,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/4l376j79k62rnsk/Robocop.rar/file"
+    link: "https://shrinkme.click/0FoUe"
 },  
     
 {
@@ -1089,7 +1089,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/vfhyxbo31u7ut9j/Spin_Master.rar/file"
+    link: "https://shrinkme.click/IPqsye8C"
 },    
     
 {
@@ -1102,7 +1102,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/e6xw74dfkn7rlyz/Pang.rar/file"
+    link: "https://shrinkme.click/gGCvm"
 },
     
 {
@@ -1128,7 +1128,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/ts9l3xjapz5go43/Pang_3.rar/file"
+    link: "https://shrinkme.click/x2UHp"
 },
 
 {
@@ -1141,7 +1141,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://www.mediafire.com/file/3sqnd3oghzjumzm/Robocop_2.rar/file"
+    link: "https://shrinkme.click/vgD8TR"
 }
 
 ];

@@ -544,8 +544,7 @@ header{
     fill:currentColor;
 }
 
-.card.is-highlighted,
-.card:target{
+.card.is-highlighted{
     animation:card-highlight 2.6s ease-out;
 }
 
