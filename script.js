@@ -6,7 +6,7 @@
 const CONFIG = Object.freeze({
     DONATE_LINK: "https://www.paypal.com/donate/?hosted_button_id=XJSCL7BK6GJW6",
     SITE_URL: "https://nostalgiaarcade.es/",
-    SHARE_TEXT: "Comparte Nostalgia Arcade si te gusta el proyecto"
+    SHARE_TEXT: "Descubre este proyecto en Nostalgia Arcade"
 });
 
 const gamesContainer = document.getElementById("games");
@@ -49,10 +49,6 @@ function getFilteredGames() {
     });
 }
 
-function getProjectUrl() {
-    return CONFIG.SITE_URL;
-}
-
 function escapeHtml(value) {
     return String(value).replace(/[&<>'"]/g, character => ({
         "&": "&amp;",
@@ -68,7 +64,7 @@ function shareIcon(name, path, url) {
 }
 
 function createShareButtons() {
-    const projectUrl = getProjectUrl();
+    const projectUrl = CONFIG.SITE_URL;
     const sharedText = CONFIG.SHARE_TEXT;
 
     return [
@@ -92,7 +88,7 @@ function createGameCard(game) {
                 <a class="download" href="${escapeHtml(game.link)}" target="_blank" rel="noopener">Descargar</a>
                 <a class="donate" href="${CONFIG.DONATE_LINK}" target="_blank" rel="noopener">☕ Invítame a un café</a>
                 <div class="share-section">
-                    <p>Comparte el proyecto si te gusta</p>
+                    <p>Comparte este proyecto</p>
                     <div class="share-actions">${createShareButtons()}</div>
                 </div>
             </div>
@@ -146,10 +142,11 @@ function handleCardAction(event) {
     const action = event.target.closest("[data-share]");
     if (!action || !gamesContainer.contains(action)) return;
 
+    const url = CONFIG.SITE_URL;
     const provider = action.dataset.share;
 
     if (provider === "copy") {
-        copyGameLink(getProjectUrl());
+        copyGameLink(url);
         return;
     }
 
