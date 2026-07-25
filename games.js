@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Street Fighter Champion Edition",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/rGmGhvRr/Street-Fighter-2-CE-M.jpg",
+
+    fecha: "25/07/2026",
+
+    descripcion: "https://shrinkme.click/v3Th46",
+
+    link: "https://shrinkme.click/JXTg5df"
+},        
+    
+{
     nombre: "Gunbarich",
     categoria: "Puzles",
     jugadores: "1",
