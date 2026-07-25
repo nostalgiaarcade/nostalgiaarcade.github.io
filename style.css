@@ -128,26 +128,42 @@ header{
 
 .busqueda{
 
-    padding:30px;
+    padding:18px 20px 14px;
     text-align:center;
 
 }
 
 #searchInput{
 
-    width:90%;
-    max-width:700px;
+    width:100%;
+    max-width:440px;
 
-    padding:18px;
+    padding:10px 14px;
 
-    border:none;
+    border:1px solid var(--border);
     outline:none;
 
-    border-radius:var(--radius-input);
+    border-radius:8px;
 
-    font-size:18px;
+    color:var(--text);
+    font-size:15px;
 
-    background:white;
+    background:#191919;
+    transition:border-color var(--transition), box-shadow var(--transition), background var(--transition);
+
+}
+
+#searchInput::placeholder{
+
+    color:#8d8d8d;
+
+}
+
+#searchInput:focus{
+
+    background:#1f1f1f;
+    border-color:#756200;
+    box-shadow:0 0 0 3px rgba(255,212,0,.10);
 
 }
 
