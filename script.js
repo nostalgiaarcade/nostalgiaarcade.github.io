@@ -6,7 +6,14 @@
 const CONFIG = Object.freeze({
     DONATE_LINK: "https://www.paypal.com/donate/?hosted_button_id=XJSCL7BK6GJW6",
     SITE_URL: "https://nostalgiaarcade.es/",
-    SHARE_TEXT: "Juegos arcade clásicos portables para Windows."
+    SHARE_TEXT: "Juegos arcade clásicos portables para Windows.",
+    ADSENSE: Object.freeze({
+        CLIENT: "ca-pub-9111018873042498",
+        SLOTS: Object.freeze({
+            "catalog-top": "",
+            "catalog-bottom": ""
+        })
+    })
 });
 
 const gamesContainer = document.getElementById("games");
@@ -170,11 +177,42 @@ function applyGlobalLinks() {
     });
 }
 
+function initializeAds() {
+    Object.entries(CONFIG.ADSENSE.SLOTS).forEach(([position, slotId]) => {
+        if (!slotId) return;
+
+        const container = document.querySelector(`[data-ad-slot="${position}"]`);
+        if (!container) return;
+
+        const label = document.createElement("p");
+        label.className = "ad-slot__label";
+        label.textContent = "Publicidad";
+
+        const ad = document.createElement("ins");
+        ad.className = "adsbygoogle";
+        ad.style.display = "block";
+        ad.dataset.adClient = CONFIG.ADSENSE.CLIENT;
+        ad.dataset.adSlot = slotId;
+        ad.dataset.adFormat = "horizontal";
+        ad.dataset.fullWidthResponsive = "true";
+
+        container.append(label, ad);
+        container.hidden = false;
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch {
+            container.hidden = true;
+        }
+    });
+}
+
 searchInput.addEventListener("input", handleSearch);
 categoryButtons.forEach(button => button.addEventListener("click", handleCategory));
 gamesContainer.addEventListener("click", handleCardAction);
 
 applyGlobalLinks();
+initializeAds();
 renderGames();
 
 /* Protección web existente. */
