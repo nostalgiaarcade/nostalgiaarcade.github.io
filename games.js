@@ -2,7 +2,7 @@ const games = [
 
 {
     nombre: "Bomber Man World",
-    categoria: "Puzless",
+    categoria: "Puzles",
     jugadores: "1-2",
     imagen: "https://i.ibb.co/tkqyqvk/bomber-man-world.jpg",
 
@@ -15,7 +15,7 @@ const games = [
     
 {
     nombre: "Battle City",
-    categoria: "Puzless",
+    categoria: "Puzles",
     jugadores: "1-2",
     imagen: "https://i.ibb.co/8LBnc0v8/battle-city.jpg",
 
