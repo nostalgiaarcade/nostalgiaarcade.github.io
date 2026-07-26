@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Tapper",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/ycZ1NShr/tapper.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/dJ1Lo"
+},     
+    
+{
     nombre: "Top Hunter",
     categoria: "Acción",
     jugadores: "1-2",
