@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Wild West Cowboys",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/99ZmCMdh/wild-west-cowboy.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ZpZ3M1Gs"
+},  
+    
+{
     nombre: "Pop'n Bounce",
     categoria: "Puzles",
     jugadores: "1-2",
