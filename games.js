@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Pop'n Bounce",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/ymTFn36y/Pop-n-Bounce-miniatura.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/6EhvT"
+},     
+    
+{
     nombre: "Lunar Lander",
     categoria: "Aviones",
     jugadores: "1",
