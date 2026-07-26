@@ -4,7 +4,7 @@ const games = [
     nombre: "Lunar Lander",
     categoria: "Aviones",
     jugadores: "1",
-    imagen: "https://i.ibb.co/ycZ1NShr/tapper.jpg",
+    imagen: "https://i.ibb.co/HTGC42Pg/lunar-lander.jpg",
 
     fecha: "26/07/2026",
 
