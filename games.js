@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Top Hunter",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/tTsLJZ0C/top-hunter.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MEBsEJ"
+}, 
+    
+{
     nombre: "Tetris",
     categoria: "Puzles",
     jugadores: "1-2",
