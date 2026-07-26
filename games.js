@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Battle City",
+    categoria: "Puzless",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/8LBnc0v8/battle-city.jpg",
+
+    fecha: "25/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/abbUq"
+},       
+    
+{
     nombre: "Street Fighter Champion Edition",
     categoria: "Peleas",
     jugadores: "1-2",
