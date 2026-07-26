@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Bomber Man World",
+    categoria: "Puzless",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/tkqyqvk/bomber-man-world.jpg",
+
+    fecha: "25/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ACSrza"
+},        
+    
+{
     nombre: "Battle City",
     categoria: "Puzless",
     jugadores: "1-2",
