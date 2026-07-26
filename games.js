@@ -238,7 +238,7 @@ const games = [
     nombre: "Captain Commando",
     categoria: "Acción",
     jugadores: "1-2",
-    imagen: "https://i.postimg.cc/vTP1svqH/Captain-Commando-M.jpg",
+    imagen: "https://i.ibb.co/DHjD0123/Captain-Commando-M.jpg",
 
     fecha: "22/07/2026",
 
