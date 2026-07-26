@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Tetris",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/WWqFjhqs/tetris.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/0CCQC"
+},      
+    
+{
     nombre: "Bomber Man World",
     categoria: "Puzles",
     jugadores: "1-2",
