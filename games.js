@@ -8,9 +8,9 @@ const games = [
 
     fecha: "25/07/2026",
 
-    descripcion: "https://shrinkme.click/v3Th46",
+    descripcion: "",
 
-    link: "https://shrinkme.click/JXTg5df"
+    link: "https://shrinkme.click/v3Th46"
 },        
     
 {
