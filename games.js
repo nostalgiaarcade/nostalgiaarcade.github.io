@@ -6,7 +6,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/tkqyqvk/bomber-man-world.jpg",
 
-    fecha: "25/07/2026",
+    fecha: "26/07/2026",
 
     descripcion: "",
 
@@ -19,7 +19,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/8LBnc0v8/battle-city.jpg",
 
-    fecha: "25/07/2026",
+    fecha: "26/07/2026",
 
     descripcion: "",
 
