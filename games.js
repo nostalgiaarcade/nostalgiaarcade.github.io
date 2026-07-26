@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Lunar Lander",
+    categoria: "Aviones",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/ycZ1NShr/tapper.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/4547v"
+},         
+    
+{
     nombre: "Tapper",
     categoria: "Puzles",
     jugadores: "1-2",
