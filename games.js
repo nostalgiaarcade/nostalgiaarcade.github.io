@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Boot Hill",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/ym4xFC0M/boot-hill.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/sLgX30gj"
+},      
+    
+{
     nombre: "Magical Drop 2",
     categoria: "Puzles",
     jugadores: "1-2",
