@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Magical Drop",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/RGySSBpw/magical-drop.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/yEzpKh"
+},  
+    
+{
     nombre: "Cool Boarders Arcade Jam",
     categoria: "Deportes",
     jugadores: "1",
