@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Magical Drop 2",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/bSWGxc3/magical-drop-2.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/jIgm"
+},     
+    
+{
     nombre: "Magical Drop",
     categoria: "Puzles",
     jugadores: "1-2",
