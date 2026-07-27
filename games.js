@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzzle & Action Ichidant-R",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Mk30RtNy/Puzzle-Action-Ichidant-R.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/wJaJ"
+},   
+    
+{
     nombre: "Puzzle & Action Tant-R",
     categoria: "Puzles",
     jugadores: "1-2",
