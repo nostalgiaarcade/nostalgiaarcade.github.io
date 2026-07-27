@@ -6,7 +6,7 @@ const games = [
     jugadores: "1",
     imagen: "https://i.ibb.co/q3MjBDx5/cool-boarders-M.jpg",
 
-    fecha: "26/07/2026",
+    fecha: "27/07/2026",
 
     descripcion: "",
 
