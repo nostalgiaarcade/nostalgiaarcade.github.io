@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Cool Boarders Arcade Jam",
+    categoria: "Deportes",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/q3MjBDx5/cool-boarders-M.jpg",
+
+    fecha: "26/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/1LIyxcb"
+},  
+    
+{
     nombre: "Wild West Cowboys",
     categoria: "Acción",
     jugadores: "1-2",
