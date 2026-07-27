@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Puzzle & Action Tant-R",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/5mkj949/Puzzle-Action-Tant-R.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Gf085o8"
+},   
+    
+{
     nombre: "Magical Drop 3",
     categoria: "Puzles",
     jugadores: "1-2",
