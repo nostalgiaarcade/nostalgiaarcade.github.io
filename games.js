@@ -4,7 +4,7 @@ const games = [
     nombre: "Boot Hill",
     categoria: "Acción",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/ym4xFC0M/boot-hill.jpg",
+    imagen: "https://i.ibb.co/4RMfX5Xy/boot-hill-M.jpg",
 
     fecha: "27/07/2026",
 
