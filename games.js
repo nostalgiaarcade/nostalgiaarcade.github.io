@@ -1349,7 +1349,7 @@ const games = [
 
     descripcion: "",
 
-    link: "https://shrinkme.click/x2UHp"
+    link: "https://shrinkme.click/LicsRGVJ"
 },
 
 {
