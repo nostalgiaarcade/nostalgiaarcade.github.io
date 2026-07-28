@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Pinball",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/MkpdxDTH/pinball.jpg",
+
+    fecha: "27/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/UzYJf6"
+},   
+    
+{
     nombre: "Puzzle & Action Ichidant-R",
     categoria: "Puzles",
     jugadores: "1-2",
