@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Detana!! Twin Bee",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/SDcgsvpq/detana-twin-bee-copia.jpg",
+
+    fecha: "28/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Znxd"
+},      
+    
+{
     nombre: "Mappy",
     categoria: "Puzles",
     jugadores: "1-2",
