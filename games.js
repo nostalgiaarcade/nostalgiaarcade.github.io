@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Mappy",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/8JJ3nG9/mappy.jpg",
+
+    fecha: "28/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/WpVNdr"
+},          
+    
+{
     nombre: "Pinball Action",
     categoria: "Puzles",
     jugadores: "1-2",
