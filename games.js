@@ -6,7 +6,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/SDcgsvpq/detana-twin-bee-copia.jpg",
 
-    fecha: "28/07/2026",
+    fecha: "29/07/2026",
 
     descripcion: "",
 
@@ -19,7 +19,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/8JJ3nG9/mappy.jpg",
 
-    fecha: "28/07/2026",
+    fecha: "29/07/2026",
 
     descripcion: "",
 
@@ -32,7 +32,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/F49gm69V/pinball-action-M-copia.jpg",
 
-    fecha: "28/07/2026",
+    fecha: "29/07/2026",
 
     descripcion: "",
 
