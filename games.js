@@ -2,7 +2,7 @@ const games = [
 
 {
     nombre: "Euro League",
-    categoria: "Aviones",
+    categoria: "Deportes",
     jugadores: "1-2",
     imagen: "https://i.ibb.co/YTFyWfm3/euro-league.jpg",
 
