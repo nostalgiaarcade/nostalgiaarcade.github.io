@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Pinball Action",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/F49gm69V/pinball-action-M-copia.jpg",
+
+    fecha: "28/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ou0bU"
+},       
+    
+{
     nombre: "Pinball",
     categoria: "Puzles",
     jugadores: "1-2",
