@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Euro League",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/YTFyWfm3/euro-league.jpg",
+
+    fecha: "30/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/rDiPEvpd"
+},      
+    
+{
     nombre: "Detana!! Twin Bee",
     categoria: "Aviones",
     jugadores: "1-2",
