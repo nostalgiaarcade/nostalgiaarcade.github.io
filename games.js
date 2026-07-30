@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Sega Rally Championship",
+    categoria: "Deportes",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/Zqh7wNQ/Sega-Rally.jpg",
+
+    fecha: "30/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/bvUo"
+}, 
+    
+{
     nombre: "Euro League",
     categoria: "Deportes",
     jugadores: "1-2",
