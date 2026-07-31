@@ -1,9 +1,22 @@
 const games = [
 
 {
+    nombre: "Metal Slug 3",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/hRfpMhDF/metal-slug-3.jpg",
+
+    fecha: "31/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/yiDCD"
+},       
+    
+{
     nombre: "Metal Slug 2",
     categoria: "Acción",
-    jugadores: "1",
+    jugadores: "1-2",
     imagen: "https://i.ibb.co/7JN3ZJH8/metal-slug-2.jpg",
 
     fecha: "31/07/2026",
