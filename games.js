@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Metal Slug 2",
+    categoria: "Acción",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/7JN3ZJH8/metal-slug-2.jpg",
+
+    fecha: "31/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ycIrjBl"
+},     
+    
+{
     nombre: "Sega Rally Championship",
     categoria: "Deportes",
     jugadores: "1",
