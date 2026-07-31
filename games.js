@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Mutation Nation",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/9JzTtxv/mutation-nation.jpg",
+
+    fecha: "31/07/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/yh3jSU"
+}, 
+    
+{
     nombre: "Metal Slug X",
     categoria: "Acción",
     jugadores: "1-2",
