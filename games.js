@@ -4,7 +4,7 @@ const games = [
     nombre: "Metal Slug X",
     categoria: "Acción",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/C50GHmMs/metal-slug-5.jpg",
+    imagen: "https://i.ibb.co/604fbrv4/metal-slug-x.jpg",
 
     fecha: "31/07/2026",
 
