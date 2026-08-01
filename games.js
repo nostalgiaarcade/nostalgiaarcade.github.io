@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Burning Fight",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/VpWYz1t1/burning-fight.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/GdFz5BmV"
+}, 
+    
+{
     nombre: "Excite Bike",
     categoria: "Deportes",
     jugadores: "1-2",
