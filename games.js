@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Pooyan",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/xKzQSvWG/pooyan.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/iCTq"
+},   
+    
+{
     nombre: "Road Fighter",
     categoria: "Deportes",
     jugadores: "1-2",
