@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Wonder Boy",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/BHb0gh32/wonder-boy.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/xTmNpq"
+}, 
+    
+{
     nombre: "Burning Fight",
     categoria: "Acción",
     jugadores: "1-2",
