@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Road Fighter",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/kgFsFhM8/Road-fighter-M.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Em6lV"
+},   
+    
+{
     nombre: "World Heroes Perfect",
     categoria: "Peleas",
     jugadores: "1-2",
