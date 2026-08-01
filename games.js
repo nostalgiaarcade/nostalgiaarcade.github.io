@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Popeye",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/4ZLCXdw4/popeye.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/5Qp8ub"
+},     
+    
+{
     nombre: "Pooyan",
     categoria: "Puzles",
     jugadores: "1-2",
