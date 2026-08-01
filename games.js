@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "World Heroes Perfect",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/4ZdjtJV9/world-heroes-perfect.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/E8nvSBsN"
+},    
+    
+{
     nombre: "World Heroes 2 Jet",
     categoria: "Peleas",
     jugadores: "1-2",
