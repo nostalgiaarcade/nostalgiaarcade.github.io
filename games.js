@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Excite Bike",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/wm2WYHg/excitebike.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ZEHY"
+}, 
+    
+{
     nombre: "Popeye",
     categoria: "Puzles",
     jugadores: "1-2",
