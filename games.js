@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Super Gem Fighter Mini Mix",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/fz2JCVVL/super-gem-fighter-mini-mix.jpg",
+
+    fecha: "02/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/L9qIFD"
+},  
+    
+{
     nombre: "Circus Charlie",
     categoria: "Puzles",
     jugadores: "1-2",
