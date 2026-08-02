@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "WWF Wrestlefest",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/6csrYbmL/wwf-wrestlefest.jpg",
+
+    fecha: "02/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/jBochFQ"
+},    
+    
+{
     nombre: "Boogie Wings",
     categoria: "Aviones",
     jugadores: "1-2",
