@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Arabian",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Ld21NYzz/arabian.jpg",
+
+    fecha: "02/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MktNKj"
+},  
+    
+{
     nombre: "Super Gem Fighter Mini Mix",
     categoria: "Peleas",
     jugadores: "1-2",
