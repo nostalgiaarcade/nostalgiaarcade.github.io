@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Mystic Warriors",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/prPYtrtc/mystic-warriors.jpg",
+
+    fecha: "03/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/zJ1t8"
+},  
+    
+{
     nombre: "Arabian",
     categoria: "Puzles",
     jugadores: "1-2",
