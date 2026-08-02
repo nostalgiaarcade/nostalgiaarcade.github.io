@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Boogie Wings",
+    categoria: "Aviones",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/CsYdKYbb/boogie-wings.jpg",
+
+    fecha: "01/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/gyWj"
+},     
+    
+{
     nombre: "Wonder Boy",
     categoria: "Acción",
     jugadores: "1-2",
