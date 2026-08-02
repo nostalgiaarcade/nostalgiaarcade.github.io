@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Circus Charlie",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/gFjWw1yj/circus-charlie.jpg",
+
+    fecha: "02/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/9DwRpwy"
+},  
+    
+{
     nombre: "WWF Wrestlefest",
     categoria: "Peleas",
     jugadores: "1-2",
