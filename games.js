@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Captain America and the Avengers",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/sX3BLLY/captain-america-and-the-avengers.jpg",
+
+    fecha: "03/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/MXHs"
+},  
+    
+{
     nombre: "Mystic Warriors",
     categoria: "Acción",
     jugadores: "1-2",
