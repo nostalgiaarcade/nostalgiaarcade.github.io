@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Samurai Shodown",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/5gJNFxJX/Samurai-Shodown.jpg",
+
+    fecha: "03/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/n9Cgu"
+},  
+    
+{
     nombre: "Captain America and the Avengers",
     categoria: "Acción",
     jugadores: "1-2",
