@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "World Rally",
+    categoria: "Deportes",
+    jugadores: "1-2",
+    imagen: "https://i.postimg.cc/0Nr8SY9k/world-rally.jpg",
+
+    fecha: "05/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/gXfU"
+},
+    
+{
     nombre: "Samurai Shodown 5",
     categoria: "Peleas",
     jugadores: "1-2",
