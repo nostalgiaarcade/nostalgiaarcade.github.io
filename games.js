@@ -1,10 +1,23 @@
 const games = [
 
 {
+    nombre: "Ice Climber",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/6cQwM4V7/ice-climber.jpg",
+
+    fecha: "06/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/kLp4B"
+},
+    
+{
     nombre: "World Rally",
     categoria: "Deportes",
     jugadores: "1-2",
-    imagen: "https://i.postimg.cc/0Nr8SY9k/world-rally.jpg",
+    imagen: "https://i.ibb.co/7dJCsMqB/world-rally.jpg",
 
     fecha: "05/08/2026",
 
@@ -17,7 +30,7 @@ const games = [
     nombre: "Samurai Shodown 5",
     categoria: "Peleas",
     jugadores: "1-2",
-    imagen: "https://i.postimg.cc/sDgRkf71/Samurai-Shodown-5.jpg",
+    imagen: "https://i.ibb.co/27JySMXf/Samurai-Shodown-5.jpg",
 
     fecha: "05/08/2026",
 
@@ -30,7 +43,7 @@ const games = [
     nombre: "Samurai Shodown 4",
     categoria: "Peleas",
     jugadores: "1-2",
-    imagen: "https://i.postimg.cc/D0GM1Dbt/Samurai-Shodown-4.jpg",
+    imagen: "https://i.ibb.co/2Y0yqbNf/Samurai-Shodown-4.jpg",
 
     fecha: "05/08/2026",
 
@@ -43,7 +56,7 @@ const games = [
     nombre: "Samurai Shodown 3",
     categoria: "Peleas",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/jv9Ndn33/Samurai-Shodown-3.jpg",
+    imagen: "https://i.ibb.co/RTRbfKRr/Samurai-Shodown-3.jpg",
 
     fecha: "05/08/2026",
 
