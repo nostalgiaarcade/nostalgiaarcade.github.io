@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Samurai Shodown 5",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.postimg.cc/sDgRkf71/Samurai-Shodown-5.jpg",
+
+    fecha: "05/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/5bkQl"
+},
+    
+{
     nombre: "Samurai Shodown 4",
     categoria: "Peleas",
     jugadores: "1-2",
