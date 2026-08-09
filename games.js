@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "The Punisher",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/Ng8nPvpN/the-punisher.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/BfC9fbg"
+},
+    
+{
     nombre: "Ice Climber",
     categoria: "Puzles",
     jugadores: "1-2",
