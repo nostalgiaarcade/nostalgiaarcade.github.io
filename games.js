@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Paperboy",
+    categoria: "Puzles",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/G347XvW5/paperboy.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/hE0r90UR"
+},
+    
+{
     nombre: "The Punisher",
     categoria: "Acción",
     jugadores: "1-2",
