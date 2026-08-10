@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Superman",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/prWYcxS4/superman.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/adBQ"
+},
+    
+{
     nombre: "Joe & Mac Returns",
     categoria: "Puzles",
     jugadores: "1-2",
