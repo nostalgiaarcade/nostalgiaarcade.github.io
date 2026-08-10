@@ -149,6 +149,7 @@ header{
     font-size:15px;
 
     background:#191919;
+
     transition:border-color var(--transition), box-shadow var(--transition), background var(--transition);
 
 }
@@ -230,11 +231,15 @@ header{
 
 }
 
+/* Proyecto → azul */
+
 .top-menu a:nth-child(1):hover{
 
     color:var(--blue);
 
 }
+
+/* Foro → amarillo */
 
 .top-menu a:nth-child(3):hover{
 
@@ -242,7 +247,17 @@ header{
 
 }
 
+/* Dona → rojo */
+
 .top-menu a:nth-child(5):hover{
+
+    color:var(--red);
+
+}
+
+/* Contacto → verde */
+
+.top-menu a:nth-child(7):hover{
 
     color:var(--green);
 
@@ -496,106 +511,184 @@ header{
 }
 
 /* Acciones de cada juego */
+
 .donate{
+
     display:block;
+
     width:100%;
+
     margin-top:10px;
+
     padding:12px;
+
     border:1px solid rgba(255,212,0,.45);
+
     border-radius:var(--radius-button);
+
     color:var(--yellow);
+
     text-align:center;
+
     text-decoration:none;
+
     font-weight:bold;
+
     transition:var(--transition);
+
 }
 
 .donate:hover{
+
     background:rgba(255,212,0,.12);
+
     border-color:var(--yellow);
+
     transform:translateY(-2px);
+
 }
 
 .share-section{
+
     margin-top:20px;
+
     padding-top:16px;
+
     border-top:1px solid var(--border);
+
 }
 
 .share-section p{
+
     margin-bottom:10px;
+
     color:var(--text-muted);
+
     font-size:13px;
+
     font-weight:bold;
+
 }
 
 .share-actions{
+
     display:flex;
+
     gap:8px;
+
 }
 
 .share-button{
+
     display:grid;
+
     width:32px;
     height:32px;
+
     place-items:center;
+
     border:1px solid var(--border);
+
     border-radius:50%;
+
     background:transparent;
+
     color:var(--text-soft);
+
     cursor:pointer;
+
     transition:var(--transition);
+
 }
 
 .share-button:hover{
+
     border-color:var(--yellow);
+
     background:var(--yellow);
+
     color:#111;
+
     transform:translateY(-2px);
+
 }
 
 .share-button svg{
+
     width:15px;
     height:15px;
+
     fill:currentColor;
+
 }
 
 .card.is-highlighted{
+
     animation:card-highlight 2.6s ease-out;
+
 }
 
 @keyframes card-highlight{
-    0%, 65% { box-shadow:0 0 0 3px var(--yellow), 0 0 32px rgba(255,212,0,.52); }
-    100% { box-shadow:0 0 20px rgba(0,0,0,.30); }
+
+    0%, 65% {
+        box-shadow:0 0 0 3px var(--yellow), 0 0 32px rgba(255,212,0,.52);
+    }
+
+    100% {
+        box-shadow:0 0 20px rgba(0,0,0,.30);
+    }
+
 }
 
 .empty-message{
+
     grid-column:1 / -1;
+
     color:var(--text-empty);
+
     font-size:22px;
+
     text-align:center;
+
 }
 
 .toast{
+
     position:fixed;
+
     right:20px;
     bottom:20px;
+
     z-index:10;
+
     padding:12px 16px;
+
     border:1px solid rgba(255,212,0,.45);
+
     border-radius:10px;
+
     background:#222;
+
     color:white;
+
     box-shadow:0 10px 30px rgba(0,0,0,.35);
+
     opacity:0;
+
     pointer-events:none;
+
     transform:translateY(10px);
+
     transition:opacity .2s ease, transform .2s ease;
+
 }
 
 .toast.is-visible{
+
     opacity:1;
+
     transform:translateY(0);
+
 }
 
 /* ==========================================================
@@ -621,6 +714,7 @@ footer{
 .footer-links{
 
     display:flex;
+
     justify-content:center;
     align-items:center;
 
@@ -745,13 +839,15 @@ footer p{
         padding:12px;
 
     }
-   /* =====================================================
+
+/* =====================================================
    PÁGINA EL PROYECTO
 ===================================================== */
 
 .project-page{
 
     max-width:900px;
+
     margin:0 auto 80px;
 
 }
@@ -773,6 +869,7 @@ footer p{
 .hero-text{
 
     font-size:28px;
+
     font-weight:bold;
 
     color:var(--yellow);
@@ -981,21 +1078,36 @@ footer p{
 
 }
 
+}
+
 .footer-donate{
+
     margin:18px auto 25px;
+
     max-width:700px;
+
     color:#bdbdbd;
+
     line-height:1.8;
+
     font-size:15px;
+
 }
 
 .footer-donate a{
+
     color:#ffd400;
+
     text-decoration:none;
+
     font-weight:bold;
+
     transition:.25s;
+
 }
 
 .footer-donate a:hover{
+
     color:white;
+
 }
