@@ -4,7 +4,7 @@ const games = [
     nombre: "X Train",
     categoria: "Puzles",
     jugadores: "1",
-    imagen: "https://i.ibb.co/JR6bN4d3/X-Train.jpg",
+    imagen: "https://i.ibb.co/YFFj2Y6f/X-Train.jpg",
 
     fecha: "10/08/2026",
 
