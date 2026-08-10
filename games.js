@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "X Train",
+    categoria: "Puzles",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/JR6bN4d3/X-Train.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/0QoVw"
+},
+    
+{
     nombre: "Souko Ban Deluxe",
     categoria: "Puzles",
     jugadores: "1",
