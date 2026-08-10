@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Sailor Moon",
+    categoria: "Acción",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/6RjzszW1/Sailor-moon.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/Dub0"
+},
+    
+{
     nombre: "Paperboy",
     categoria: "Acción",
     jugadores: "1",
