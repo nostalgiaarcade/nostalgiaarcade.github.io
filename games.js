@@ -2,7 +2,7 @@ const games = [
 
 {
     nombre: "Paperboy",
-    categoria: "Puzles",
+    categoria: "Acción",
     jugadores: "1",
     imagen: "https://i.ibb.co/G347XvW5/paperboy.jpg",
 
