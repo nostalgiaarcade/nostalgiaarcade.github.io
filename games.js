@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Souko Ban Deluxe",
+    categoria: "Puzles",
+    jugadores: "1",
+    imagen: "https://i.ibb.co/HDHGzgRn/Souko-Ban-Deluxe-M.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/XHUPU3os"
+},
+    
+{
     nombre: "Superman",
     categoria: "Acción",
     jugadores: "1-2",
