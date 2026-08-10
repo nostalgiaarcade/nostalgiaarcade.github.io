@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Joe & Mac Returns",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/zVJ2yJ03/joe-and-mac-returns.jpg",
+
+    fecha: "10/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/ZAqxE"
+},
+    
+{
     nombre: "Sailor Moon",
     categoria: "Acción",
     jugadores: "1-2",
