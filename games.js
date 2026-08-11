@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Diet Go Go",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/9kjg9SL7/diet-go-go.jpg",
+
+    fecha: "11/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/nPj8ie2t"
+},
+    
+{
     nombre: "X Train",
     categoria: "Puzles",
     jugadores: "1",
