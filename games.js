@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "WWF Wrestlemania",
+    categoria: "Peleas",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/VhzfDtp/WWF-Wrestlemania.jpg",
+
+    fecha: "11/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/m7aImBl"
+},
+    
+{
     nombre: "Tecmo World Soccer 96",
     categoria: "Deportes",
     jugadores: "1-2",
