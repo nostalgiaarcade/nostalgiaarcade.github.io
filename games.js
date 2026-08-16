@@ -4,7 +4,7 @@ const games = [
     nombre: "Pac-Man",
     categoria: "Puzles",
     jugadores: "1-2",
-    imagen: "https://i.ibb.co/mCvbCMkk/pac-man.jpg",
+    imagen: "https://i.ibb.co/ccsdWJDB/Pac-Man-M.jpg",
 
     fecha: "16/08/2026",
 
