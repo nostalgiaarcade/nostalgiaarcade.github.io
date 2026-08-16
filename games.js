@@ -1,6 +1,19 @@
 const games = [
 
 {
+    nombre: "Pac-Man",
+    categoria: "Puzles",
+    jugadores: "1-2",
+    imagen: "https://i.ibb.co/mCvbCMkk/pac-man.jpg",
+
+    fecha: "16/08/2026",
+
+    descripcion: "",
+
+    link: "https://shrinkme.click/oLOrZ"
+},
+    
+    {
     nombre: "WWF Wrestlemania",
     categoria: "Peleas",
     jugadores: "1-2",
