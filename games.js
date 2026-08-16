@@ -6,7 +6,7 @@ const games = [
     jugadores: "1-2",
     imagen: "https://i.ibb.co/ccsdWJDB/Pac-Man-M.jpg",
 
-    fecha: "16/08/2026",
+    fecha: "17/08/2026",
 
     descripcion: "",
 
